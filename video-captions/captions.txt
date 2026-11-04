@@ -1,0 +1,135 @@
+# time | style | text      styles: n=normal  b=big (stacks under previous chunk)  s=serif italic  c=caps  g=big gold
+0.00 | n | salam 3likom
+0.60 | n | w mrehba bikom
+1.20 | n | f wa7d l7al9a
+1.80 | n | jdida
+2.20 | n | mn barnamjkom
+3.20 | s | Stahlek Lma Thlek
+5.10 | n | f l7al9a dyal lyoum
+5.90 | n | ghadi nhadro m3akom
+6.40 | n | 3la wa7d l7aja
+7.30 | n | li 3aychin m3aha
+9.60 | n | w kan3rfoha
+10.30 | n | walakin ma kan3rfouch
+12.40 | n | chno homa
+12.90 | b | lmachakil
+13.90 | n | li katkhle9
+14.50 | n | f had lmojtama3
+15.30 | n | hiya
+16.20 | b | social media
+17.70 | n | wla mawa9i3
+18.40 | n | tawasol l2ijtima3i
+20.50 | n | awel mochkil
+21.60 | n | katkhel9o
+22.00 | n | social media
+23.20 | n | howa
+23.30 | b | lmo9arana
+24.60 | n | lmo9arana hiya
+25.50 | n | annak
+26.00 | n | kat3ich
+26.90 | n | 7yatk l yawmiya
+28.40 | n | wla sba7k
+29.50 | n | kaydouz 3adi
+30.60 | n | katfi9
+31.10 | n | katghsel wjhek
+31.80 | n | katfter
+32.30 | n | ftour 3adi
+33.20 | n | w katmchi f 7alek
+34.20 | n | katdouz nharek
+35.10 | c | KHEDMA
+35.60 | c | 9RAYA
+36.20 | n | kifma kan
+37.00 | n | walakin
+37.60 | n | katqaren had chi
+38.50 | n | m3a wa7d
+38.70 | n | l2insan
+39.60 | n | li kaypartagi
+40.20 | b | a7sen
+41.20 | n | f nharo
+42.00 | n | kifach kaydouz
+42.80 | n | kaywerrik
+43.40 | s | ftour khayali
+44.90 | n | kaydouzo
+45.60 | n | w wa7d sbe7
+46.40 | n | w wa7d lfi9a
+47.00 | s | zwina
+48.10 | n | ma kaynamech
+48.80 | n | w ma kaytbou9elch
+50.50 | n | lmochkil tani
+51.60 | n | li katkhel9o
+52.10 | n | social media
+52.80 | n | howa annak
+53.40 | n | ma kat9derch
+54.10 | n | t7bes
+54.70 | n | mn
+54.80 | b | scroll
+55.80 | n | katscrolli
+56.50 | n | katscrolli
+57.00 | n | katscrolli
+57.50 | n | katdouz
+57.70 | b | swaye3
+58.10 | n | w nta katscrolli
+59.40 | s | 3lach?
+60.10 | n | 7it dmaghek
+61.00 | n | lil2asaf
+61.90 | n | ma kay9derch y7bes
+62.90 | n | 7it kaytsenna
+64.00 | n | f kol scroll
+65.10 | n | ghadi ytl3 lik
+65.90 | n | chi 7aja zwina
+66.70 | n | ghadi t3jbek
+67.60 | n | w ghadi tkhellik
+68.40 | n | tfrez
+68.80 | g | dopamine
+69.50 | n | f dmaghek
+70.10 | n | lmochkil talet
+71.30 | n | li bghit ngoul
+72.80 | n | ma tnsach
+73.10 | n | annak nta
+73.60 | b | lproduit
+75.20 | n | kaysta3mlek
+76.20 | n | instagram
+76.70 | n | bach ydkhel
+77.10 | b | lflous
+77.60 | n | mn l2ichharat
+78.60 | n | li kay7et lik
+79.10 | n | f instagram
+79.60 | n | dakchi 3lach
+80.30 | n | bghit nfde7
+81.40 | n | had lmachakil
+82.00 | b | kamlin
+82.40 | n | 3aref annak katfollowi
+83.60 | n | w 3aref annak
+84.20 | n | katpartagi
+84.90 | s | lil2asaf
+85.80 | n | ila partagiti
+86.70 | n | chi wa7d
+87.20 | n | bl ghalat
+87.80 | n | wla chi wa7d
+88.60 | n | ma kaysthelch
+89.10 | n | ma kayfidch
+89.80 | b | lbacharia
+90.50 | n | rak kat3awen
+92.10 | n | annou yaththar
+93.10 | n | 3la nnas
+93.80 | n | w ydkhol
+94.50 | n | l7yat nnas
+95.60 | n | yemken ma ybanch lik
+97.60 | n | daba
+97.90 | n | walakin men b3d
+98.90 | n | 3achr snin
+99.50 | n | 3ichrin 3am
+100.10 | n | khmesta3ch 3am
+100.70 | n | wla tlatin 3am
+101.20 | n | mli tji
+101.80 | n | trebbi wladek
+102.90 | n | w tchouf
+103.50 | n | lmosta9bal dyalek
+105.10 | n | ghadi yban lik
+106.70 | n | annak
+107.10 | s | dyya3ti wa9tek
+107.80 | s | w dyya3ti 7yatek
+108.80 | n | dakchi 3lach
+109.20 | n | bda daba
+109.90 | n | 9bel ma
+110.50 | b | yfout lfout
