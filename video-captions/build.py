@@ -83,7 +83,24 @@ for j, (t, name, vol) in enumerate(sfx):
     mix.append(f"[s{j}]")
 af.append(f"{''.join(mix)}amix=inputs={len(mix)}:normalize=0:duration=longest,"
           f"atrim=0:{total},afade=t=out:st={total - 2}:d=2,loudnorm=I=-14:TP=-1.5:LRA=11,aresample=48000[a]")
+master = os.path.join(tmp, "master.mp4")
 run(["ffmpeg", "-v", "error", "-y", *vin, *ain, "-filter_complex", vf + ";" + ";".join(af),
-     "-map", "[v]", "-map", "[a]", "-c:v", "libx264", "-preset", "medium", "-crf", "18",
-     "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "192k", "-movflags", "+faststart", out])
-print("wrote", out)
+     "-map", "[v]", "-map", "[a]", "-c:v", "libx264", "-preset", "fast", "-crf", "12",
+     "-pix_fmt", "yuv420p", "-c:a", "pcm_s16le", os.path.join(tmp, "master.mov")])
+
+# ---- 5. Instagram delivery: H.264 High 1080x1920, 2-pass to fit under GitHub's 100 MB file limit ----
+TARGET_MB = float(os.environ.get("TARGET_MB", "95"))
+AUDIO_K = 256
+dur = float(probe(os.path.join(tmp, "master.mov"), "format=duration", []))
+vk = int(TARGET_MB * 8 * 1000 / dur - AUDIO_K - 60)          # kbps, small margin for container
+enc = ["-c:v", "libx264", "-preset", "slow", "-profile:v", "high", "-level:v", "4.2",
+       "-b:v", f"{vk}k", "-maxrate", f"{int(vk * 1.6)}k", "-bufsize", f"{vk * 2}k",
+       "-g", "48", "-bf", "2", "-pix_fmt", "yuv420p",
+       "-color_primaries", "bt709", "-color_trc", "bt709", "-colorspace", "bt709"]
+plog = os.path.join(tmp, "x264pass")
+run(["ffmpeg", "-v", "error", "-y", "-i", os.path.join(tmp, "master.mov"), *enc, "-pass", "1",
+     "-passlogfile", plog, "-an", "-f", "null", "/dev/null"])
+run(["ffmpeg", "-v", "error", "-y", "-i", os.path.join(tmp, "master.mov"), *enc, "-pass", "2",
+     "-passlogfile", plog, "-c:a", "aac", "-b:a", f"{AUDIO_K}k", "-ar", "48000",
+     "-movflags", "+faststart", out])
+print(f"wrote {out}: {os.path.getsize(out) / 1e6:.1f} MB at {vk} kbps video")
