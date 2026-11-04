@@ -1,0 +1,30 @@
+# time (s) | file in audio dir | volume        Mixkit free sound effects (Mixkit License)
+# whooshes into each b-roll cutaway
+23.05 | sfx_1492.mp3 | 0.35
+42.55 | sfx_1492.mp3 | 0.35
+45.40 | sfx_1492.mp3 | 0.25
+55.55 | sfx_1492.mp3 | 0.35
+57.50 | sfx_tick.mp3 | 0.7
+68.15 | sfx_1492.mp3 | 0.35
+73.35 | sfx_1492.mp3 | 0.35
+76.00 | sfx_1492.mp3 | 0.30
+76.30 | sfx_2357.mp3 | 0.45
+98.65 | sfx_1492.mp3 | 0.35
+106.45 | sfx_1492.mp3 | 0.35
+# soft pops on the big emphasis words
+12.90 | sfx_3005.mp3 | 0.45
+16.20 | sfx_3005.mp3 | 0.45
+40.20 | sfx_3005.mp3 | 0.45
+54.80 | sfx_3005.mp3 | 0.45
+57.70 | sfx_3005.mp3 | 0.40
+68.80 | sfx_2364.mp3 | 0.30
+82.00 | sfx_3005.mp3 | 0.45
+89.80 | sfx_3005.mp3 | 0.45
+# hit on the last line
+110.45 | sfx_2918.mp3 | 0.40
+# outro (times relative to the outro start)
++0.25 | sfx_1492.mp3 | 0.35
++1.80 | sfx_2568.mp3 | 0.8
++1.85 | sfx_2356.mp3 | 0.5
++2.45 | sfx_2357.mp3 | 0.5
++2.95 | sfx_3005.mp3 | 0.5

@@ -1,0 +1,116 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+  :root { --T: 4.8s; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 1080px; height: 1920px; overflow: hidden; background: #000; }
+  body { font-family: "Inter", sans-serif; color: #fff; position: relative; }
+  /* every animation is paused; the renderer scrubs time with the Web Animations API */
+  * { animation-play-state: paused !important; animation-fill-mode: both !important; }
+
+  .bg { position: absolute; inset: -40px; background: url(lastframe.jpg) center/cover;
+        animation: bgblur .7s ease-out 0s; }
+  @keyframes bgblur { from { filter: blur(0) brightness(1); } to { filter: blur(26px) brightness(.45); } }
+
+  .card { position: absolute; left: 90px; right: 90px; top: 560px; padding: 64px 56px 56px;
+          border-radius: 48px; background: rgba(22, 18, 16, .78);
+          border: 1px solid rgba(255,255,255,.10);
+          box-shadow: 0 40px 120px rgba(0,0,0,.55);
+          animation: cardin .7s cubic-bezier(.2,.9,.25,1.15) .25s; }
+  @keyframes cardin { from { transform: translateY(260px) scale(.92); opacity: 0; }
+                      to   { transform: none; opacity: 1; } }
+
+  .row { display: flex; align-items: center; gap: 40px; }
+  .ring { width: 200px; height: 200px; border-radius: 50%; padding: 7px; flex: none;
+          background: conic-gradient(#f5c86c, #e8735a, #c2437f, #7a4fd0, #f5c86c); }
+  .ring img { width: 100%; height: 100%; border-radius: 50%; object-fit: cover;
+              border: 6px solid #16120f; display: block; }
+  .who { min-width: 0; }
+  .handle { font-weight: 800; font-size: 52px; letter-spacing: -.5px; white-space: nowrap; }
+  .name { font-family: "Instrument Serif", serif; font-style: italic; font-size: 50px;
+          color: #f3d7b8; margin-top: 6px; white-space: nowrap; }
+
+  .btn { position: relative; margin-top: 52px; height: 112px; border-radius: 28px;
+         display: flex; align-items: center; justify-content: center;
+         font-weight: 800; font-size: 46px; overflow: hidden; }
+  .btn .follow, .btn .following { position: absolute; inset: 0; display: flex;
+         align-items: center; justify-content: center; border-radius: 28px; }
+  .btn .follow { background: #3d8bff; animation: hide .12s linear 1.82s; }
+  .btn .following { background: #3a3430; color: #fff; animation: show .12s linear 1.82s; }
+  @keyframes hide { from { opacity: 1; } to { opacity: 0; } }
+  @keyframes show { from { opacity: 0; transform: scale(.9); } to { opacity: 1; transform: none; } }
+  .btn { animation: press .28s ease-out 1.70s; }
+  @keyframes press { 0% { transform: scale(1); } 45% { transform: scale(.94); } 100% { transform: scale(1); } }
+
+  .tap { position: absolute; width: 150px; height: 150px; left: 540px; top: 858px;
+         animation: tapmove 1.0s cubic-bezier(.3,.7,.2,1) 1.0s; }
+  @keyframes tapmove { 0% { transform: translate(260px, 420px); opacity: 0; }
+                       30% { opacity: 1; }
+                       70% { transform: translate(0, 0) scale(1); opacity: 1; }
+                       80% { transform: translate(0, 0) scale(.86); }
+                       100% { transform: translate(40px, 120px) scale(1); opacity: 0; } }
+  .ripple { position: absolute; left: 555px; top: 872px; width: 120px; height: 120px;
+            border-radius: 50%; border: 6px solid rgba(255,255,255,.9);
+            animation: ripple .5s ease-out 1.80s; }
+  @keyframes ripple { 0% { transform: scale(.2); opacity: 0; } 10% { opacity: 1; } 100% { transform: scale(2.4); opacity: 0; } }
+
+  .icons { position: absolute; left: 0; right: 0; top: 1240px; display: flex;
+           justify-content: center; gap: 120px; }
+  .ic { width: 150px; height: 150px; display: flex; align-items: center; justify-content: center; }
+  .ic svg { width: 120px; height: 120px; overflow: visible; }
+  .like { animation: pop .5s cubic-bezier(.2,1.6,.4,1) 2.40s; }
+  .comment { animation: pop .5s cubic-bezier(.2,1.6,.4,1) 2.90s; }
+  @keyframes pop { 0% { transform: scale(0); opacity: 0; } 100% { transform: scale(1); opacity: 1; } }
+  .heart-fill { animation: fill .25s ease-out 2.55s; }
+  @keyframes fill { from { fill: transparent; } to { fill: #ff3b5c; } }
+  .spark { position: absolute; width: 18px; height: 18px; border-radius: 50%; background: #ff8fa3;
+           left: 50%; top: 50%; margin: -9px; animation: spark .6s ease-out 2.55s; }
+  @keyframes spark { from { transform: rotate(var(--a)) translateY(0) scale(1); opacity: 1; }
+                     to { transform: rotate(var(--a)) translateY(-130px) scale(.2); opacity: 0; } }
+
+  .cap { position: absolute; left: 0; right: 0; text-align: center; text-shadow: 0 0 24px rgba(0,0,0,.6); }
+  .cap1 { top: 1470px; font-weight: 800; font-size: 96px; letter-spacing: -1px;
+          animation: rise .45s cubic-bezier(.2,.9,.3,1.2) 2.05s; }
+  .cap2 { top: 1600px; font-family: "Instrument Serif", serif; font-style: italic; font-size: 84px;
+          color: #f3d7b8; animation: rise .45s cubic-bezier(.2,.9,.3,1.2) 3.05s; }
+  @keyframes rise { from { transform: translateY(40px) scale(.85); opacity: 0; } to { transform: none; opacity: 1; } }
+</style></head>
+<body>
+  <div class="bg"></div>
+  <div class="card">
+    <div class="row">
+      <div class="ring"><img src="avatar.jpg"></div>
+      <div class="who">
+        <div class="handle" id="handle">@handle</div>
+        <div class="name">Stahlek Bla Ma Thlek</div>
+      </div>
+    </div>
+    <div class="btn"><div class="follow">Follow</div><div class="following">Following ✓</div></div>
+  </div>
+  <div class="ripple"></div>
+  <svg class="tap" viewBox="0 0 100 100"><circle cx="50" cy="50" r="30" fill="rgba(255,255,255,.85)"/>
+    <circle cx="50" cy="50" r="42" fill="none" stroke="rgba(255,255,255,.35)" stroke-width="5"/></svg>
+
+  <div class="icons">
+    <div class="ic like" style="position:relative">
+      <svg viewBox="0 0 24 24"><path class="heart-fill" fill="transparent" stroke="#fff" stroke-width="1.8"
+        stroke-linejoin="round" d="M12 21s-7.5-4.6-9.6-9.2C.9 8.4 3 4.5 6.8 4.5c2.1 0 3.6 1.2 5.2 3.1 1.6-1.9 3.1-3.1 5.2-3.1 3.8 0 5.9 3.9 4.4 7.3C19.5 16.4 12 21 12 21z"/></svg>
+      <i class="spark" style="--a:0deg"></i><i class="spark" style="--a:60deg"></i>
+      <i class="spark" style="--a:120deg"></i><i class="spark" style="--a:180deg"></i>
+      <i class="spark" style="--a:240deg"></i><i class="spark" style="--a:300deg"></i>
+    </div>
+    <div class="ic comment">
+      <svg viewBox="0 0 24 24"><path fill="none" stroke="#fff" stroke-width="1.8" stroke-linejoin="round"
+        d="M20.5 11.6c0 4.4-3.8 7.9-8.5 7.9-1.3 0-2.6-.3-3.7-.8L3.5 20l1.4-3.8c-.9-1.3-1.4-2.9-1.4-4.6 0-4.4 3.8-7.9 8.5-7.9s8.5 3.5 8.5 7.9z"/></svg>
+    </div>
+  </div>
+  <div class="cap cap1">tbe3ni</div>
+  <div class="cap cap2">w dir like w comment</div>
+<script>
+  const h = new URLSearchParams(location.search).get("h");
+  if (h) document.getElementById("handle").textContent = "@" + h.replace(/^@/, "");
+  // shrink long handles to fit the card
+  const el = document.getElementById("handle");
+  let fs = 52; while (el.scrollWidth > 560 && fs > 30) { el.style.fontSize = (--fs) + "px"; }
+</script>
+</body></html>
