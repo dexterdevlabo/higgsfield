@@ -1,0 +1,12 @@
+# start | end | mixkit clip id | clip start offset (s) | horizontal crop focus (0=left .. 1=right; -1 = fit width on black)
+# All clips: Mixkit free stock (mixkit.co, Mixkit License - free for commercial use)
+23.30 | 25.50 | 41185 | 0.3 | 0.5
+42.80 | 45.60 | 4866  | 1.0 | 0.55
+45.60 | 48.10 | 31407 | 1.5 | 0.45
+55.80 | 57.50 | 13168 | 2.0 | 0.42
+57.50 | 59.40 | 28897 | 1.0 | -1
+68.40 | 70.10 | 5665  | 2.0 | 0.68
+73.60 | 75.20 | 20770 | 1.0 | 0.45
+76.20 | 79.10 | 22938 | 6.0 | 0.5
+98.90 | 101.20 | 28901 | 2.0 | 0.5
+106.70 | 108.80 | 49020 | 2.0 | 0.75

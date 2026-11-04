@@ -29,7 +29,7 @@ SMALL = r"\fnInter\b1\fs56"
 
 def emit(ev, layer_tags, x, y, text, start, end, color, move=None):
     pos = rf"\move({move[0]},{move[1]},{x},{y},0,110)" if move else rf"\pos({x},{y})"
-    shadow = rf"{{\an5{pos}{layer_tags}{POP}\1c&H000000&\1a&H70&\bord0\shad0\blur9}}"
+    shadow = rf"{{\an5{pos}{layer_tags}{POP}\1c&H000000&\1a&H40&\bord0\shad0\blur12}}"
     fill = rf"{{\an5{pos}{layer_tags}{POP}\1c{color}\bord0\shad0}}"
     ev.append(f"Dialogue: 0,{ts(start)},{ts(end)},Cap,,0,0,0,,{shadow}{text}")
     ev.append(f"Dialogue: 1,{ts(start)},{ts(end)},Cap,,0,0,0,,{fill}{text}")

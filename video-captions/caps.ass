@@ -1,0 +1,305 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Inter,64,&H00FFFFFF,&H00FFFFFF,&H00000000,&H00000000,-1,0,0,0,100,100,-1,0,1,0,0,5,40,40,0,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:00.60,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}salam 3likom
+Dialogue: 1,0:00:00.00,0:00:00.60,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&HFFFFFF&\bord0\shad0}salam 3likom
+Dialogue: 0,0:00:00.60,0:00:01.20,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}w mrehba bikom
+Dialogue: 1,0:00:00.60,0:00:01.20,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&HFFFFFF&\bord0\shad0}w mrehba bikom
+Dialogue: 0,0:00:01.20,0:00:01.80,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}f wa7d l7al9a
+Dialogue: 1,0:00:01.20,0:00:01.80,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&HFFFFFF&\bord0\shad0}f wa7d l7al9a
+Dialogue: 0,0:00:01.80,0:00:02.20,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}jdida
+Dialogue: 1,0:00:01.80,0:00:02.20,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&HFFFFFF&\bord0\shad0}jdida
+Dialogue: 0,0:00:02.20,0:00:03.20,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}mn barnamjkom
+Dialogue: 1,0:00:02.20,0:00:03.20,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&HFFFFFF&\bord0\shad0}mn barnamjkom
+Dialogue: 0,0:00:03.20,0:00:05.10,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInstrument Serif\i1\b0\fs116\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}Stahlek Bla Ma Thlek
+Dialogue: 1,0:00:03.20,0:00:05.10,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInstrument Serif\i1\b0\fs116\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&HFFFFFF&\bord0\shad0}Stahlek Bla Ma Thlek
+Dialogue: 0,0:00:05.10,0:00:05.90,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}f l7al9a dyal lyoum
+Dialogue: 1,0:00:05.10,0:00:05.90,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&HFFFFFF&\bord0\shad0}f l7al9a dyal lyoum
+Dialogue: 0,0:00:05.90,0:00:06.40,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}ghadi ndwi likom
+Dialogue: 1,0:00:05.90,0:00:06.40,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&HFFFFFF&\bord0\shad0}ghadi ndwi likom
+Dialogue: 0,0:00:06.40,0:00:07.30,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}3la wa7d l7aja
+Dialogue: 1,0:00:06.40,0:00:07.30,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&HFFFFFF&\bord0\shad0}3la wa7d l7aja
+Dialogue: 0,0:00:07.30,0:00:09.50,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}li 3aychin m3aha
+Dialogue: 1,0:00:07.30,0:00:09.50,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&HFFFFFF&\bord0\shad0}li 3aychin m3aha
+Dialogue: 0,0:00:09.60,0:00:10.30,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}w kan3rfoha
+Dialogue: 1,0:00:09.60,0:00:10.30,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&HFFFFFF&\bord0\shad0}w kan3rfoha
+Dialogue: 0,0:00:10.30,0:00:12.40,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}walakin ma kan3rfouch
+Dialogue: 1,0:00:10.30,0:00:12.40,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&HFFFFFF&\bord0\shad0}walakin ma kan3rfouch
+Dialogue: 0,0:00:12.40,0:00:12.90,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}chno homa
+Dialogue: 1,0:00:12.40,0:00:12.90,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&HFFFFFF&\bord0\shad0}chno homa
+Dialogue: 0,0:00:12.90,0:00:13.90,Cap,,0,0,0,,{\an5\move(540,1290,540,1216,0,110)\fnInter\b1\fs56\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}chno homa
+Dialogue: 1,0:00:12.90,0:00:13.90,Cap,,0,0,0,,{\an5\move(540,1290,540,1216,0,110)\fnInter\b1\fs56\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&HFFFFFF&\bord0\shad0}chno homa
+Dialogue: 0,0:00:12.90,0:00:13.90,Cap,,0,0,0,,{\an5\pos(540,1304)\fnInter\b1\fs128\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}lmachakil
+Dialogue: 1,0:00:12.90,0:00:13.90,Cap,,0,0,0,,{\an5\pos(540,1304)\fnInter\b1\fs128\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&HFFFFFF&\bord0\shad0}lmachakil
+Dialogue: 0,0:00:13.90,0:00:14.50,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}li katkhle9
+Dialogue: 1,0:00:13.90,0:00:14.50,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&HFFFFFF&\bord0\shad0}li katkhle9
+Dialogue: 0,0:00:14.50,0:00:15.30,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}f had lmojtama3
+Dialogue: 1,0:00:14.50,0:00:15.30,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&HFFFFFF&\bord0\shad0}f had lmojtama3
+Dialogue: 0,0:00:15.30,0:00:16.20,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}hiya
+Dialogue: 1,0:00:15.30,0:00:16.20,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&HFFFFFF&\bord0\shad0}hiya
+Dialogue: 0,0:00:16.20,0:00:17.70,Cap,,0,0,0,,{\an5\move(540,1290,540,1216,0,110)\fnInter\b1\fs56\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}hiya
+Dialogue: 1,0:00:16.20,0:00:17.70,Cap,,0,0,0,,{\an5\move(540,1290,540,1216,0,110)\fnInter\b1\fs56\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&HFFFFFF&\bord0\shad0}hiya
+Dialogue: 0,0:00:16.20,0:00:17.70,Cap,,0,0,0,,{\an5\pos(540,1304)\fnInter\b1\fs128\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}social media
+Dialogue: 1,0:00:16.20,0:00:17.70,Cap,,0,0,0,,{\an5\pos(540,1304)\fnInter\b1\fs128\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&HFFFFFF&\bord0\shad0}social media
+Dialogue: 0,0:00:17.70,0:00:18.40,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}wla mawa9i3
+Dialogue: 1,0:00:17.70,0:00:18.40,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&HFFFFFF&\bord0\shad0}wla mawa9i3
+Dialogue: 0,0:00:18.40,0:00:20.50,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}tawasol l2ijtima3i
+Dialogue: 1,0:00:18.40,0:00:20.50,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&HFFFFFF&\bord0\shad0}tawasol l2ijtima3i
+Dialogue: 0,0:00:20.50,0:00:21.60,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}awel mochkil
+Dialogue: 1,0:00:20.50,0:00:21.60,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&HFFFFFF&\bord0\shad0}awel mochkil
+Dialogue: 0,0:00:21.60,0:00:22.00,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}katkhel9o
+Dialogue: 1,0:00:21.60,0:00:22.00,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&HFFFFFF&\bord0\shad0}katkhel9o
+Dialogue: 0,0:00:22.00,0:00:23.20,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}social media
+Dialogue: 1,0:00:22.00,0:00:23.20,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&HFFFFFF&\bord0\shad0}social media
+Dialogue: 0,0:00:23.20,0:00:23.30,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}howa
+Dialogue: 1,0:00:23.20,0:00:23.30,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&HFFFFFF&\bord0\shad0}howa
+Dialogue: 0,0:00:23.30,0:00:24.60,Cap,,0,0,0,,{\an5\move(540,1290,540,1216,0,110)\fnInter\b1\fs56\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}howa
+Dialogue: 1,0:00:23.30,0:00:24.60,Cap,,0,0,0,,{\an5\move(540,1290,540,1216,0,110)\fnInter\b1\fs56\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&HFFFFFF&\bord0\shad0}howa
+Dialogue: 0,0:00:23.30,0:00:24.60,Cap,,0,0,0,,{\an5\pos(540,1304)\fnInter\b1\fs128\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}lmo9arana
+Dialogue: 1,0:00:23.30,0:00:24.60,Cap,,0,0,0,,{\an5\pos(540,1304)\fnInter\b1\fs128\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&HFFFFFF&\bord0\shad0}lmo9arana
+Dialogue: 0,0:00:24.60,0:00:25.50,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}lmo9arana hiya
+Dialogue: 1,0:00:24.60,0:00:25.50,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&HFFFFFF&\bord0\shad0}lmo9arana hiya
+Dialogue: 0,0:00:25.50,0:00:26.00,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}annak
+Dialogue: 1,0:00:25.50,0:00:26.00,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&HFFFFFF&\bord0\shad0}annak
+Dialogue: 0,0:00:26.00,0:00:26.90,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}kat3ich
+Dialogue: 1,0:00:26.00,0:00:26.90,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&HFFFFFF&\bord0\shad0}kat3ich
+Dialogue: 0,0:00:26.90,0:00:28.40,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}7yatk l yawmiya
+Dialogue: 1,0:00:26.90,0:00:28.40,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&HFFFFFF&\bord0\shad0}7yatk l yawmiya
+Dialogue: 0,0:00:28.40,0:00:29.50,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}wla sba7k
+Dialogue: 1,0:00:28.40,0:00:29.50,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&HFFFFFF&\bord0\shad0}wla sba7k
+Dialogue: 0,0:00:29.50,0:00:30.60,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}kaydouz 3adi
+Dialogue: 1,0:00:29.50,0:00:30.60,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&HFFFFFF&\bord0\shad0}kaydouz 3adi
+Dialogue: 0,0:00:30.60,0:00:31.10,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}katfi9
+Dialogue: 1,0:00:30.60,0:00:31.10,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&HFFFFFF&\bord0\shad0}katfi9
+Dialogue: 0,0:00:31.10,0:00:31.80,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}katghsel wjhek
+Dialogue: 1,0:00:31.10,0:00:31.80,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&HFFFFFF&\bord0\shad0}katghsel wjhek
+Dialogue: 0,0:00:31.80,0:00:32.30,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}katfter
+Dialogue: 1,0:00:31.80,0:00:32.30,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&HFFFFFF&\bord0\shad0}katfter
+Dialogue: 0,0:00:32.30,0:00:33.20,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}ftour 3adi
+Dialogue: 1,0:00:32.30,0:00:33.20,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&HFFFFFF&\bord0\shad0}ftour 3adi
+Dialogue: 0,0:00:33.20,0:00:34.20,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}w katmchi f 7alek
+Dialogue: 1,0:00:33.20,0:00:34.20,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&HFFFFFF&\bord0\shad0}w katmchi f 7alek
+Dialogue: 0,0:00:34.20,0:00:35.10,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}katdouz nharek
+Dialogue: 1,0:00:34.20,0:00:35.10,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&HFFFFFF&\bord0\shad0}katdouz nharek
+Dialogue: 0,0:00:35.10,0:00:35.60,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs66\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}KHEDMA
+Dialogue: 1,0:00:35.10,0:00:35.60,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs66\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&HFFFFFF&\bord0\shad0}KHEDMA
+Dialogue: 0,0:00:35.60,0:00:36.20,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs66\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}9RAYA
+Dialogue: 1,0:00:35.60,0:00:36.20,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs66\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&HFFFFFF&\bord0\shad0}9RAYA
+Dialogue: 0,0:00:36.20,0:00:37.00,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}kifma kan
+Dialogue: 1,0:00:36.20,0:00:37.00,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&HFFFFFF&\bord0\shad0}kifma kan
+Dialogue: 0,0:00:37.00,0:00:37.60,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}walakin
+Dialogue: 1,0:00:37.00,0:00:37.60,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&HFFFFFF&\bord0\shad0}walakin
+Dialogue: 0,0:00:37.60,0:00:38.50,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}katqaren had chi
+Dialogue: 1,0:00:37.60,0:00:38.50,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&HFFFFFF&\bord0\shad0}katqaren had chi
+Dialogue: 0,0:00:38.50,0:00:38.70,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}m3a wa7d
+Dialogue: 1,0:00:38.50,0:00:38.70,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&HFFFFFF&\bord0\shad0}m3a wa7d
+Dialogue: 0,0:00:38.70,0:00:39.60,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}l2insan
+Dialogue: 1,0:00:38.70,0:00:39.60,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&HFFFFFF&\bord0\shad0}l2insan
+Dialogue: 0,0:00:39.60,0:00:40.20,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}li kaypartagi
+Dialogue: 1,0:00:39.60,0:00:40.20,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&HFFFFFF&\bord0\shad0}li kaypartagi
+Dialogue: 0,0:00:40.20,0:00:41.20,Cap,,0,0,0,,{\an5\move(540,1290,540,1216,0,110)\fnInter\b1\fs56\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}li kaypartagi
+Dialogue: 1,0:00:40.20,0:00:41.20,Cap,,0,0,0,,{\an5\move(540,1290,540,1216,0,110)\fnInter\b1\fs56\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&HFFFFFF&\bord0\shad0}li kaypartagi
+Dialogue: 0,0:00:40.20,0:00:41.20,Cap,,0,0,0,,{\an5\pos(540,1304)\fnInter\b1\fs128\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}a7sen
+Dialogue: 1,0:00:40.20,0:00:41.20,Cap,,0,0,0,,{\an5\pos(540,1304)\fnInter\b1\fs128\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&HFFFFFF&\bord0\shad0}a7sen
+Dialogue: 0,0:00:41.20,0:00:42.00,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}f nharo
+Dialogue: 1,0:00:41.20,0:00:42.00,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&HFFFFFF&\bord0\shad0}f nharo
+Dialogue: 0,0:00:42.00,0:00:42.80,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}kifach kaydouz
+Dialogue: 1,0:00:42.00,0:00:42.80,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&HFFFFFF&\bord0\shad0}kifach kaydouz
+Dialogue: 0,0:00:42.80,0:00:43.40,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}kaywerrik
+Dialogue: 1,0:00:42.80,0:00:43.40,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&HFFFFFF&\bord0\shad0}kaywerrik
+Dialogue: 0,0:00:43.40,0:00:44.90,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInstrument Serif\i1\b0\fs116\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}ftour khayali
+Dialogue: 1,0:00:43.40,0:00:44.90,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInstrument Serif\i1\b0\fs116\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&HFFFFFF&\bord0\shad0}ftour khayali
+Dialogue: 0,0:00:44.90,0:00:45.60,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}kaydouzo
+Dialogue: 1,0:00:44.90,0:00:45.60,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&HFFFFFF&\bord0\shad0}kaydouzo
+Dialogue: 0,0:00:45.60,0:00:46.40,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}w wa7d sbe7
+Dialogue: 1,0:00:45.60,0:00:46.40,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&HFFFFFF&\bord0\shad0}w wa7d sbe7
+Dialogue: 0,0:00:46.40,0:00:47.00,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}w wa7d lfi9a
+Dialogue: 1,0:00:46.40,0:00:47.00,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&HFFFFFF&\bord0\shad0}w wa7d lfi9a
+Dialogue: 0,0:00:47.00,0:00:48.10,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInstrument Serif\i1\b0\fs116\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}zwina
+Dialogue: 1,0:00:47.00,0:00:48.10,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInstrument Serif\i1\b0\fs116\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&HFFFFFF&\bord0\shad0}zwina
+Dialogue: 0,0:00:48.10,0:00:48.80,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}ma kaynamech
+Dialogue: 1,0:00:48.10,0:00:48.80,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&HFFFFFF&\bord0\shad0}ma kaynamech
+Dialogue: 0,0:00:48.80,0:00:50.50,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}w ma kaytbou9elch
+Dialogue: 1,0:00:48.80,0:00:50.50,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&HFFFFFF&\bord0\shad0}w ma kaytbou9elch
+Dialogue: 0,0:00:50.50,0:00:51.60,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}lmochkil tani
+Dialogue: 1,0:00:50.50,0:00:51.60,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&HFFFFFF&\bord0\shad0}lmochkil tani
+Dialogue: 0,0:00:51.60,0:00:52.10,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}li katkhel9o
+Dialogue: 1,0:00:51.60,0:00:52.10,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&HFFFFFF&\bord0\shad0}li katkhel9o
+Dialogue: 0,0:00:52.10,0:00:52.80,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}social media
+Dialogue: 1,0:00:52.10,0:00:52.80,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&HFFFFFF&\bord0\shad0}social media
+Dialogue: 0,0:00:52.80,0:00:53.40,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}howa annak
+Dialogue: 1,0:00:52.80,0:00:53.40,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&HFFFFFF&\bord0\shad0}howa annak
+Dialogue: 0,0:00:53.40,0:00:54.10,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}ma kat9derch
+Dialogue: 1,0:00:53.40,0:00:54.10,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&HFFFFFF&\bord0\shad0}ma kat9derch
+Dialogue: 0,0:00:54.10,0:00:54.70,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}t7bes
+Dialogue: 1,0:00:54.10,0:00:54.70,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&HFFFFFF&\bord0\shad0}t7bes
+Dialogue: 0,0:00:54.70,0:00:54.80,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}mn
+Dialogue: 1,0:00:54.70,0:00:54.80,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&HFFFFFF&\bord0\shad0}mn
+Dialogue: 0,0:00:54.80,0:00:55.80,Cap,,0,0,0,,{\an5\move(540,1290,540,1216,0,110)\fnInter\b1\fs56\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}mn
+Dialogue: 1,0:00:54.80,0:00:55.80,Cap,,0,0,0,,{\an5\move(540,1290,540,1216,0,110)\fnInter\b1\fs56\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&HFFFFFF&\bord0\shad0}mn
+Dialogue: 0,0:00:54.80,0:00:55.80,Cap,,0,0,0,,{\an5\pos(540,1304)\fnInter\b1\fs128\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}scroll
+Dialogue: 1,0:00:54.80,0:00:55.80,Cap,,0,0,0,,{\an5\pos(540,1304)\fnInter\b1\fs128\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&HFFFFFF&\bord0\shad0}scroll
+Dialogue: 0,0:00:55.80,0:00:56.50,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}katscrolli
+Dialogue: 1,0:00:55.80,0:00:56.50,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&HFFFFFF&\bord0\shad0}katscrolli
+Dialogue: 0,0:00:56.50,0:00:57.00,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}katscrolli
+Dialogue: 1,0:00:56.50,0:00:57.00,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&HFFFFFF&\bord0\shad0}katscrolli
+Dialogue: 0,0:00:57.00,0:00:57.50,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}katscrolli
+Dialogue: 1,0:00:57.00,0:00:57.50,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&HFFFFFF&\bord0\shad0}katscrolli
+Dialogue: 0,0:00:57.50,0:00:57.70,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}katdouz
+Dialogue: 1,0:00:57.50,0:00:57.70,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&HFFFFFF&\bord0\shad0}katdouz
+Dialogue: 0,0:00:57.70,0:00:58.10,Cap,,0,0,0,,{\an5\move(540,1290,540,1216,0,110)\fnInter\b1\fs56\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}katdouz
+Dialogue: 1,0:00:57.70,0:00:58.10,Cap,,0,0,0,,{\an5\move(540,1290,540,1216,0,110)\fnInter\b1\fs56\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&HFFFFFF&\bord0\shad0}katdouz
+Dialogue: 0,0:00:57.70,0:00:58.10,Cap,,0,0,0,,{\an5\pos(540,1304)\fnInter\b1\fs128\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}swaye3
+Dialogue: 1,0:00:57.70,0:00:58.10,Cap,,0,0,0,,{\an5\pos(540,1304)\fnInter\b1\fs128\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&HFFFFFF&\bord0\shad0}swaye3
+Dialogue: 0,0:00:58.10,0:00:59.40,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}w nta katscrolli
+Dialogue: 1,0:00:58.10,0:00:59.40,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&HFFFFFF&\bord0\shad0}w nta katscrolli
+Dialogue: 0,0:00:59.40,0:01:00.10,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInstrument Serif\i1\b0\fs116\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}3lach?
+Dialogue: 1,0:00:59.40,0:01:00.10,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInstrument Serif\i1\b0\fs116\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&HFFFFFF&\bord0\shad0}3lach?
+Dialogue: 0,0:01:00.10,0:01:01.00,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}7it dmaghek
+Dialogue: 1,0:01:00.10,0:01:01.00,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&HFFFFFF&\bord0\shad0}7it dmaghek
+Dialogue: 0,0:01:01.00,0:01:01.90,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}lil2asaf
+Dialogue: 1,0:01:01.00,0:01:01.90,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&HFFFFFF&\bord0\shad0}lil2asaf
+Dialogue: 0,0:01:01.90,0:01:02.90,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}ma kay9derch y7bes
+Dialogue: 1,0:01:01.90,0:01:02.90,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&HFFFFFF&\bord0\shad0}ma kay9derch y7bes
+Dialogue: 0,0:01:02.90,0:01:04.00,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}7it kaytsenna
+Dialogue: 1,0:01:02.90,0:01:04.00,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&HFFFFFF&\bord0\shad0}7it kaytsenna
+Dialogue: 0,0:01:04.00,0:01:05.10,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}f kol scroll
+Dialogue: 1,0:01:04.00,0:01:05.10,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&HFFFFFF&\bord0\shad0}f kol scroll
+Dialogue: 0,0:01:05.10,0:01:05.90,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}ghadi ytl3 lik
+Dialogue: 1,0:01:05.10,0:01:05.90,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&HFFFFFF&\bord0\shad0}ghadi ytl3 lik
+Dialogue: 0,0:01:05.90,0:01:06.70,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}chi 7aja zwina
+Dialogue: 1,0:01:05.90,0:01:06.70,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&HFFFFFF&\bord0\shad0}chi 7aja zwina
+Dialogue: 0,0:01:06.70,0:01:07.60,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}ghadi t3jbek
+Dialogue: 1,0:01:06.70,0:01:07.60,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&HFFFFFF&\bord0\shad0}ghadi t3jbek
+Dialogue: 0,0:01:07.60,0:01:08.40,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}w ghadi tkhellik
+Dialogue: 1,0:01:07.60,0:01:08.40,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&HFFFFFF&\bord0\shad0}w ghadi tkhellik
+Dialogue: 0,0:01:08.40,0:01:08.80,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}tfrez
+Dialogue: 1,0:01:08.40,0:01:08.80,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&HFFFFFF&\bord0\shad0}tfrez
+Dialogue: 0,0:01:08.80,0:01:09.50,Cap,,0,0,0,,{\an5\move(540,1290,540,1216,0,110)\fnInter\b1\fs56\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}tfrez
+Dialogue: 1,0:01:08.80,0:01:09.50,Cap,,0,0,0,,{\an5\move(540,1290,540,1216,0,110)\fnInter\b1\fs56\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&HFFFFFF&\bord0\shad0}tfrez
+Dialogue: 0,0:01:08.80,0:01:09.50,Cap,,0,0,0,,{\an5\pos(540,1304)\fnInter\b1\fs128\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}dopamine
+Dialogue: 1,0:01:08.80,0:01:09.50,Cap,,0,0,0,,{\an5\pos(540,1304)\fnInter\b1\fs128\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H7CCDF4&\bord0\shad0}dopamine
+Dialogue: 0,0:01:09.50,0:01:10.10,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}f dmaghek
+Dialogue: 1,0:01:09.50,0:01:10.10,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&HFFFFFF&\bord0\shad0}f dmaghek
+Dialogue: 0,0:01:10.10,0:01:11.30,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}lmochkil talet
+Dialogue: 1,0:01:10.10,0:01:11.30,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&HFFFFFF&\bord0\shad0}lmochkil talet
+Dialogue: 0,0:01:11.30,0:01:12.80,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}li bghit ngoul
+Dialogue: 1,0:01:11.30,0:01:12.80,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&HFFFFFF&\bord0\shad0}li bghit ngoul
+Dialogue: 0,0:01:12.80,0:01:13.10,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}ma tnsach
+Dialogue: 1,0:01:12.80,0:01:13.10,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&HFFFFFF&\bord0\shad0}ma tnsach
+Dialogue: 0,0:01:13.10,0:01:13.60,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}annak nta
+Dialogue: 1,0:01:13.10,0:01:13.60,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&HFFFFFF&\bord0\shad0}annak nta
+Dialogue: 0,0:01:13.60,0:01:15.20,Cap,,0,0,0,,{\an5\move(540,1290,540,1216,0,110)\fnInter\b1\fs56\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}annak nta
+Dialogue: 1,0:01:13.60,0:01:15.20,Cap,,0,0,0,,{\an5\move(540,1290,540,1216,0,110)\fnInter\b1\fs56\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&HFFFFFF&\bord0\shad0}annak nta
+Dialogue: 0,0:01:13.60,0:01:15.20,Cap,,0,0,0,,{\an5\pos(540,1304)\fnInter\b1\fs128\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}lproduit
+Dialogue: 1,0:01:13.60,0:01:15.20,Cap,,0,0,0,,{\an5\pos(540,1304)\fnInter\b1\fs128\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&HFFFFFF&\bord0\shad0}lproduit
+Dialogue: 0,0:01:15.20,0:01:16.20,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}kaysta3mlek
+Dialogue: 1,0:01:15.20,0:01:16.20,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&HFFFFFF&\bord0\shad0}kaysta3mlek
+Dialogue: 0,0:01:16.20,0:01:16.70,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}instagram
+Dialogue: 1,0:01:16.20,0:01:16.70,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&HFFFFFF&\bord0\shad0}instagram
+Dialogue: 0,0:01:16.70,0:01:17.10,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}bach ydkhel
+Dialogue: 1,0:01:16.70,0:01:17.10,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&HFFFFFF&\bord0\shad0}bach ydkhel
+Dialogue: 0,0:01:17.10,0:01:17.60,Cap,,0,0,0,,{\an5\move(540,1290,540,1216,0,110)\fnInter\b1\fs56\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}bach ydkhel
+Dialogue: 1,0:01:17.10,0:01:17.60,Cap,,0,0,0,,{\an5\move(540,1290,540,1216,0,110)\fnInter\b1\fs56\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&HFFFFFF&\bord0\shad0}bach ydkhel
+Dialogue: 0,0:01:17.10,0:01:17.60,Cap,,0,0,0,,{\an5\pos(540,1304)\fnInter\b1\fs128\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}lflous
+Dialogue: 1,0:01:17.10,0:01:17.60,Cap,,0,0,0,,{\an5\pos(540,1304)\fnInter\b1\fs128\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&HFFFFFF&\bord0\shad0}lflous
+Dialogue: 0,0:01:17.60,0:01:18.60,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}mn l2ichharat
+Dialogue: 1,0:01:17.60,0:01:18.60,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&HFFFFFF&\bord0\shad0}mn l2ichharat
+Dialogue: 0,0:01:18.60,0:01:19.10,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}li kay7et lik
+Dialogue: 1,0:01:18.60,0:01:19.10,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&HFFFFFF&\bord0\shad0}li kay7et lik
+Dialogue: 0,0:01:19.10,0:01:19.60,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}f instagram
+Dialogue: 1,0:01:19.10,0:01:19.60,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&HFFFFFF&\bord0\shad0}f instagram
+Dialogue: 0,0:01:19.60,0:01:20.30,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}dakchi 3lach
+Dialogue: 1,0:01:19.60,0:01:20.30,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&HFFFFFF&\bord0\shad0}dakchi 3lach
+Dialogue: 0,0:01:20.30,0:01:21.40,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}bghit nfde7
+Dialogue: 1,0:01:20.30,0:01:21.40,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&HFFFFFF&\bord0\shad0}bghit nfde7
+Dialogue: 0,0:01:21.40,0:01:22.00,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}had lmachakil
+Dialogue: 1,0:01:21.40,0:01:22.00,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&HFFFFFF&\bord0\shad0}had lmachakil
+Dialogue: 0,0:01:22.00,0:01:22.40,Cap,,0,0,0,,{\an5\move(540,1290,540,1216,0,110)\fnInter\b1\fs56\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}had lmachakil
+Dialogue: 1,0:01:22.00,0:01:22.40,Cap,,0,0,0,,{\an5\move(540,1290,540,1216,0,110)\fnInter\b1\fs56\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&HFFFFFF&\bord0\shad0}had lmachakil
+Dialogue: 0,0:01:22.00,0:01:22.40,Cap,,0,0,0,,{\an5\pos(540,1304)\fnInter\b1\fs128\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}kamlin
+Dialogue: 1,0:01:22.00,0:01:22.40,Cap,,0,0,0,,{\an5\pos(540,1304)\fnInter\b1\fs128\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&HFFFFFF&\bord0\shad0}kamlin
+Dialogue: 0,0:01:22.40,0:01:23.60,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}3aref annak katfollowi
+Dialogue: 1,0:01:22.40,0:01:23.60,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&HFFFFFF&\bord0\shad0}3aref annak katfollowi
+Dialogue: 0,0:01:23.60,0:01:24.20,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}w 3aref annak
+Dialogue: 1,0:01:23.60,0:01:24.20,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&HFFFFFF&\bord0\shad0}w 3aref annak
+Dialogue: 0,0:01:24.20,0:01:24.90,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}katpartagi
+Dialogue: 1,0:01:24.20,0:01:24.90,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&HFFFFFF&\bord0\shad0}katpartagi
+Dialogue: 0,0:01:24.90,0:01:25.80,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInstrument Serif\i1\b0\fs116\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}lil2asaf
+Dialogue: 1,0:01:24.90,0:01:25.80,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInstrument Serif\i1\b0\fs116\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&HFFFFFF&\bord0\shad0}lil2asaf
+Dialogue: 0,0:01:25.80,0:01:26.70,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}ila partagiti
+Dialogue: 1,0:01:25.80,0:01:26.70,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&HFFFFFF&\bord0\shad0}ila partagiti
+Dialogue: 0,0:01:26.70,0:01:27.20,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}chi wa7d
+Dialogue: 1,0:01:26.70,0:01:27.20,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&HFFFFFF&\bord0\shad0}chi wa7d
+Dialogue: 0,0:01:27.20,0:01:27.80,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}bl ghalat
+Dialogue: 1,0:01:27.20,0:01:27.80,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&HFFFFFF&\bord0\shad0}bl ghalat
+Dialogue: 0,0:01:27.80,0:01:28.60,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}wla chi wa7d
+Dialogue: 1,0:01:27.80,0:01:28.60,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&HFFFFFF&\bord0\shad0}wla chi wa7d
+Dialogue: 0,0:01:28.60,0:01:29.10,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}ma kaysthelch
+Dialogue: 1,0:01:28.60,0:01:29.10,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&HFFFFFF&\bord0\shad0}ma kaysthelch
+Dialogue: 0,0:01:29.10,0:01:29.80,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}ma kayfidch
+Dialogue: 1,0:01:29.10,0:01:29.80,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&HFFFFFF&\bord0\shad0}ma kayfidch
+Dialogue: 0,0:01:29.80,0:01:30.50,Cap,,0,0,0,,{\an5\move(540,1290,540,1216,0,110)\fnInter\b1\fs56\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}ma kayfidch
+Dialogue: 1,0:01:29.80,0:01:30.50,Cap,,0,0,0,,{\an5\move(540,1290,540,1216,0,110)\fnInter\b1\fs56\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&HFFFFFF&\bord0\shad0}ma kayfidch
+Dialogue: 0,0:01:29.80,0:01:30.50,Cap,,0,0,0,,{\an5\pos(540,1304)\fnInter\b1\fs128\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}lbacharia
+Dialogue: 1,0:01:29.80,0:01:30.50,Cap,,0,0,0,,{\an5\pos(540,1304)\fnInter\b1\fs128\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&HFFFFFF&\bord0\shad0}lbacharia
+Dialogue: 0,0:01:30.50,0:01:32.10,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}rak kat3awen
+Dialogue: 1,0:01:30.50,0:01:32.10,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&HFFFFFF&\bord0\shad0}rak kat3awen
+Dialogue: 0,0:01:32.10,0:01:33.10,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}annou yaththar
+Dialogue: 1,0:01:32.10,0:01:33.10,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&HFFFFFF&\bord0\shad0}annou yaththar
+Dialogue: 0,0:01:33.10,0:01:33.80,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}3la nnas
+Dialogue: 1,0:01:33.10,0:01:33.80,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&HFFFFFF&\bord0\shad0}3la nnas
+Dialogue: 0,0:01:33.80,0:01:34.50,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}w ydkhol
+Dialogue: 1,0:01:33.80,0:01:34.50,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&HFFFFFF&\bord0\shad0}w ydkhol
+Dialogue: 0,0:01:34.50,0:01:35.60,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}l7yat nnas
+Dialogue: 1,0:01:34.50,0:01:35.60,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&HFFFFFF&\bord0\shad0}l7yat nnas
+Dialogue: 0,0:01:35.60,0:01:37.60,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}yemken ma ybanch lik
+Dialogue: 1,0:01:35.60,0:01:37.60,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&HFFFFFF&\bord0\shad0}yemken ma ybanch lik
+Dialogue: 0,0:01:37.60,0:01:37.90,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}daba
+Dialogue: 1,0:01:37.60,0:01:37.90,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&HFFFFFF&\bord0\shad0}daba
+Dialogue: 0,0:01:37.90,0:01:38.90,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}walakin men b3d
+Dialogue: 1,0:01:37.90,0:01:38.90,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&HFFFFFF&\bord0\shad0}walakin men b3d
+Dialogue: 0,0:01:38.90,0:01:39.50,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}3achr snin
+Dialogue: 1,0:01:38.90,0:01:39.50,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&HFFFFFF&\bord0\shad0}3achr snin
+Dialogue: 0,0:01:39.50,0:01:40.10,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}3ichrin 3am
+Dialogue: 1,0:01:39.50,0:01:40.10,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&HFFFFFF&\bord0\shad0}3ichrin 3am
+Dialogue: 0,0:01:40.10,0:01:40.70,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}khmesta3ch 3am
+Dialogue: 1,0:01:40.10,0:01:40.70,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&HFFFFFF&\bord0\shad0}khmesta3ch 3am
+Dialogue: 0,0:01:40.70,0:01:41.20,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}wla tlatin 3am
+Dialogue: 1,0:01:40.70,0:01:41.20,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&HFFFFFF&\bord0\shad0}wla tlatin 3am
+Dialogue: 0,0:01:41.20,0:01:41.80,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}mli tji
+Dialogue: 1,0:01:41.20,0:01:41.80,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&HFFFFFF&\bord0\shad0}mli tji
+Dialogue: 0,0:01:41.80,0:01:42.90,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}trebbi wladek
+Dialogue: 1,0:01:41.80,0:01:42.90,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&HFFFFFF&\bord0\shad0}trebbi wladek
+Dialogue: 0,0:01:42.90,0:01:43.50,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}w tchouf
+Dialogue: 1,0:01:42.90,0:01:43.50,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&HFFFFFF&\bord0\shad0}w tchouf
+Dialogue: 0,0:01:43.50,0:01:45.10,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}lmosta9bal dyalek
+Dialogue: 1,0:01:43.50,0:01:45.10,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&HFFFFFF&\bord0\shad0}lmosta9bal dyalek
+Dialogue: 0,0:01:45.10,0:01:46.70,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}ghadi yban lik
+Dialogue: 1,0:01:45.10,0:01:46.70,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&HFFFFFF&\bord0\shad0}ghadi yban lik
+Dialogue: 0,0:01:46.70,0:01:47.10,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}annak
+Dialogue: 1,0:01:46.70,0:01:47.10,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&HFFFFFF&\bord0\shad0}annak
+Dialogue: 0,0:01:47.10,0:01:47.80,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInstrument Serif\i1\b0\fs116\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}dyya3ti wa9tek
+Dialogue: 1,0:01:47.10,0:01:47.80,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInstrument Serif\i1\b0\fs116\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&HFFFFFF&\bord0\shad0}dyya3ti wa9tek
+Dialogue: 0,0:01:47.80,0:01:48.80,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInstrument Serif\i1\b0\fs116\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}w dyya3ti 7yatek
+Dialogue: 1,0:01:47.80,0:01:48.80,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInstrument Serif\i1\b0\fs116\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&HFFFFFF&\bord0\shad0}w dyya3ti 7yatek
+Dialogue: 0,0:01:48.80,0:01:49.20,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}dakchi 3lach
+Dialogue: 1,0:01:48.80,0:01:49.20,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&HFFFFFF&\bord0\shad0}dakchi 3lach
+Dialogue: 0,0:01:49.20,0:01:49.90,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}bda daba
+Dialogue: 1,0:01:49.20,0:01:49.90,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&HFFFFFF&\bord0\shad0}bda daba
+Dialogue: 0,0:01:49.90,0:01:50.50,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}9bel ma
+Dialogue: 1,0:01:49.90,0:01:50.50,Cap,,0,0,0,,{\an5\pos(540,1290)\fnInter\b1\fs64\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&HFFFFFF&\bord0\shad0}9bel ma
+Dialogue: 0,0:01:50.50,0:01:51.40,Cap,,0,0,0,,{\an5\move(540,1290,540,1216,0,110)\fnInter\b1\fs56\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}9bel ma
+Dialogue: 1,0:01:50.50,0:01:51.40,Cap,,0,0,0,,{\an5\move(540,1290,540,1216,0,110)\fnInter\b1\fs56\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&HFFFFFF&\bord0\shad0}9bel ma
+Dialogue: 0,0:01:50.50,0:01:51.40,Cap,,0,0,0,,{\an5\pos(540,1304)\fnInter\b1\fs128\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&H000000&\1a&H40&\bord0\shad0\blur12}yfout lfout
+Dialogue: 1,0:01:50.50,0:01:51.40,Cap,,0,0,0,,{\an5\pos(540,1304)\fnInter\b1\fs128\fscx82\fscy82\t(0,110,\fscx100\fscy100)\fad(50,40)\1c&HFFFFFF&\bord0\shad0}yfout lfout
