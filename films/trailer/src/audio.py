@@ -6,7 +6,7 @@ Follows references/sound-design.md: events attach to on-screen motion, effects
 lead the cut by 2-3 frames (~0.08s at 30fps), one sub impact per shot boundary,
 and a near-inaudible bed underneath.
 """
-import numpy as np, wave, struct
+import numpy as np, wave, os
 
 SR, DUR = 48000, 10.0
 N = int(SR * DUR)
@@ -141,7 +141,8 @@ mix[-tail:] *= np.linspace(1, 0, tail)
 
 st = np.stack([mix, mix], axis=1)                          # mono content, stereo file
 pcm = (st * 32767).astype(np.int16)
-with wave.open('/home/user/higgsfield/projects/trailer/assets/audio/mix.wav', 'wb') as w:
+out = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'assets', 'audio', 'mix.wav')
+with wave.open(out, 'wb') as w:
     w.setnchannels(2); w.setsampwidth(2); w.setframerate(SR)
     w.writeframes(pcm.tobytes())
 print(f"wrote mix.wav  {DUR}s  peak={np.max(np.abs(mix)):.3f}")
