@@ -1,0 +1,30 @@
+{
+  "project": "",
+  "fps": 24,
+  "master": { "w": 2560, "h": 1440 },
+  "vertical": { "w": 1080, "h": 1920 },
+  "palette": {
+    "bg-deep": "#0E1116",
+    "bg-raised": "#171C24",
+    "primary": "#2B4C6F",
+    "secondary": "#8C9BAB",
+    "accent": "#E0A31C",
+    "alert": "#C0392B",
+    "text": "#F2F5F8",
+    "text-muted": "#93A0AE"
+  },
+  "type": {
+    "headline": { "family": "Archivo", "weight": 700, "size": 72, "tracking": -0.015, "leading": 1.05 },
+    "label":    { "family": "Inter",   "weight": 600, "size": 28, "tracking":  0.02,  "leading": 1.20 },
+    "body":     { "family": "Inter",   "weight": 400, "size": 20, "tracking":  0.01,  "leading": 1.40 }
+  },
+  "motion": {
+    "entrance": { "ms": 420, "bezier": [0.16, 1, 0.3, 1], "travel": 24 },
+    "exit":     { "ms": 260, "bezier": [0.7, 0, 0.84, 0], "travel": 0 },
+    "camera":   { "bezier": [0.4, 0, 0.6, 1], "max_scale": 1.04 },
+    "stagger_ms": 60
+  },
+  "grain": 0.02,
+  "vignette": 0.12,
+  "transitions_allowed": ["cut", "map-zoom-push", "shape-mask", "graphic-match", "act-dip"]
+}
