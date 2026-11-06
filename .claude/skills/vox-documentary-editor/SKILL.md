@@ -111,7 +111,13 @@ for t in ffmpeg ffprobe convert magick python3 node npx blender manim rembg sox;
 
 Baseline that is nearly always present: **ffmpeg/ffprobe** (compositing, motion, render),
 **ImageMagick** (stills, masks, grading), **Python + PIL/numpy** (procedural graphics, SVG,
-layer math), **Node/npx** (Remotion, Motion Canvas when a React timeline is justified).
+layer math), **Node/npx**.
+
+Preferred renderer when available: **HyperFrames** (`heygen-com/hyperframes`) — authors a shot as
+HTML + GSAP and renders it through headless Chrome + FFmpeg, giving real typography, masks and
+shadows with deterministic output. Always run its `lint` before rendering; it catches silent
+failures (muted audio, missing `@font-face`) that a finished file hides. See
+`references/technical-production.md` for the composition shape and its sharp edges.
 
 Install only what a shot actually requires, prefer FOSS, and prefer a technique the baseline
 can already do. `references/technical-production.md` has working fallbacks for every

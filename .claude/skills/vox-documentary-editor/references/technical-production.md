@@ -30,17 +30,68 @@ Inkscape). On a minimal image that delegate is absent and `convert in.svg out.pn
 
 | Need | First choice | Baseline fallback |
 |---|---|---|
-| Timeline, composite, render | ffmpeg filter graphs | — (ffmpeg *is* the baseline) |
+| Timeline, composite, render | **HyperFrames** (see below) | ffmpeg filter graphs |
 | Still editing, masks, grading | ImageMagick | PIL |
 | Procedural graphics, charts, maps | SVG generated from Python → rasterise | PIL drawing |
 | SVG rasterisation | `cairosvg`, `inkscape`, `rsvg-convert` | draw directly with PIL — do **not** assume ImageMagick can do it (see note) |
-| Complex synced typographic timelines | Remotion (`npx create-video`) or Motion Canvas | per-frame PNG sequence from Python |
+| Complex synced typographic timelines | HyperFrames, else Remotion or Motion Canvas | per-frame PNG sequence from Python |
 | Math/science animation | Manim | SVG keyframes from Python |
 | Background removal | `rembg`, SAM | ImageMagick fuzz/flood + hand SVG mask |
 | 3D, camera projection | Blender (`--background` + script) | fake depth via parallax layers |
 | Cartography | QGIS, GeoPandas | GeoJSON → SVG projection in pure Python |
 | VO word timestamps | `faster-whisper` / `whisper` | manual beat marking against waveform |
 | Audio measurement/mixing | ffmpeg `ebur128`, `loudnorm` | — |
+
+## HyperFrames — preferred renderer
+
+`heygen-com/hyperframes` renders an HTML document to MP4: it seeks a paused GSAP timeline frame
+by frame in headless Chrome and encodes with FFmpeg, so the same input gives the same output.
+Prefer it whenever a shot needs real typography, masks, shadows, filters or many synchronised
+layers — which is most documentary motion graphics. It needs Node 22+ and FFmpeg.
+
+```bash
+npm install --ignore-scripts hyperframes     # or: npx hyperframes init <project>
+./node_modules/.bin/hyperframes lint    <proj>   # catches silent failures BEFORE rendering
+./node_modules/.bin/hyperframes render  <proj> -o out/film.mp4 --fps 30 --quality delivery
+```
+
+Composition shape (one HTML file):
+
+```html
+<div id="root" data-composition-id="root" data-width="1920" data-height="1080" data-fps="30">
+  <div class="clip" id="s1" data-start="0" data-duration="2.7">…</div>
+  <audio id="mix" data-start="0" data-duration="10" src="assets/mix.wav"></audio>
+  <script src="…/gsap.min.js"></script>
+  <script>
+    const tl = gsap.timeline({paused:true});
+    tl.fromTo("#s1k1",{opacity:0,y:26},{opacity:1,y:0,duration:.44,ease:"power4.out"},0.22);
+    window.__timelines = {root: tl};
+  </script>
+</div>
+```
+
+Hard-won rules, each of which cost a render:
+
+- **The film's length is the GSAP timeline's length**, not the last clip's `data-start+duration`.
+  A timeline whose last tween ends at 8.96s produces an 8.96s film however long the clips are.
+  End with a terminal hold tween at the intended duration.
+- **An `<audio>` or media element without an `id` renders SILENT.** The file still gets an AAC
+  stream, so this passes a casual check — `lint` catches it, and measuring loudness proves it.
+- **Run `lint` before every render.** It also catches fonts used without `@font-face`, which
+  otherwise silently fall back to a generic face and quietly wreck the typography.
+- **Vendor fonts into the project** with `@font-face` and a relative `url()`. Do not rely on
+  system fonts; a render elsewhere will not have them.
+- Scene-level opacity fades are usually unnecessary — give scenes `z-index` and hard-cut. Fades
+  that end after the next scene starts leave black frames.
+- A mask reveal must open *over* the outgoing shot, and the incoming content must already be
+  opaque inside the mask. Fading content in after the mask has covered the frame yields a
+  black hole; `blackdetect` will find it.
+- Easing: GSAP `power4.out` ≈ the entrance curve, `power3.in` ≈ exit, `power1.inOut` ≈ camera.
+- Useful companions: `timeline` (prints the renderer's own model of your clips, which is how you
+  find elements it thinks are never visible), `snapshot`, `validate`, `inspect`, `measure`,
+  `grade-compare`, `audio`, `beats`.
+- It is telemetric by default. `hyperframes telemetry disable` before working on anything the
+  user would not want reported.
 
 ## Rendering model
 
