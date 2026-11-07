@@ -93,6 +93,10 @@ engravings) must be blur-then-thresholded or it renders as sparse specks.
 
 - **graphify** — skill files only; its CLI (invoked 33× by the skill) is absent, `pip install` denied.
 - **REA** — `rea-agents` installed locally, but needs Ghidra/IDA/tshark and an MCP registration.
+- **OmniRoute** (`cheaper-inference/OmniRoute`, MIT) — **not installed, deliberately.** It is a
+  self-hosted gateway serving `localhost:20128`; `npm install -g` and running a server are both
+  blocked here, and a localhost server dies with this container anyway. It belongs on the
+  user's Mac. Note it is a *router*, not credits: "bring your own provider accounts".
 - **flow-mcp** — not installed; cannot run in this Linux container (needs macOS/Windows, a
   visible screen, and the user's Google login). It *would* run on the user's own Mac.
 
