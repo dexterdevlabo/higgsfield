@@ -1,0 +1,164 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+  @font-face{font-family:'Boldonse';src:url('Boldonse-Regular.ttf') format('truetype');font-display:block}
+  @font-face{font-family:'Work Sans';src:url('WorkSans-Regular.ttf') format('truetype');font-weight:400;font-display:block}
+  @font-face{font-family:'Work Sans';src:url('WorkSans-Bold.ttf') format('truetype');font-weight:700;font-display:block}
+
+  /* measured from the reference sheet */
+  :root{
+    --ground:#DAA51E;   /* mustard card, ~24% of frame */
+    --paper:#EBE8DE;    /* torn banner + backdrop, ~22% */
+    --ink:#000000;      /* ~9% */
+    --red:#C23D38;      /* ~3% — true accent */
+    --tape:rgba(226,208,160,.72);
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{width:1080px;height:1440px;background:var(--paper);overflow:hidden;
+       font-family:'Work Sans',sans-serif}
+  #backdrop{position:absolute;inset:0;background:var(--paper)}
+  /* backdrop speckle */
+  #backdrop:after{content:'';position:absolute;inset:0;opacity:.5;
+    background-image:radial-gradient(#C9C2B2 1px,transparent 1px);background-size:7px 7px}
+
+  #card{position:absolute;left:52px;top:52px;width:976px;height:1336px;
+        background:var(--ground);transform:rotate(-0.5deg);
+        box-shadow:0 10px 34px rgba(60,40,10,.28)}
+  /* uneven ink on the card ground */
+  #card:after{content:'';position:absolute;inset:0;pointer-events:none;opacity:.10;
+    background:radial-gradient(ellipse 70% 55% at 30% 20%,#fff 0%,transparent 60%),
+               radial-gradient(ellipse 60% 50% at 80% 85%,#000 0%,transparent 60%)}
+
+  .tape{position:absolute;width:150px;height:44px;background:var(--tape);
+        box-shadow:0 2px 5px rgba(0,0,0,.18);z-index:40}
+  .tape:before,.tape:after{content:'';position:absolute;top:0;bottom:0;width:7px;background:inherit}
+  .tape:before{left:-6px;clip-path:polygon(100% 0,0 18%,100% 34%,0 55%,100% 72%,0 100%,100% 100%)}
+  .tape:after{right:-6px;clip-path:polygon(0 0,100% 14%,0 32%,100% 52%,0 74%,100% 100%,0 100%)}
+
+  .torn{position:absolute;filter:drop-shadow(0 7px 10px rgba(60,40,10,.34))}
+
+  h1{font-family:'Boldonse';font-size:96px;line-height:.98;color:var(--ink);
+     letter-spacing:-.012em;text-align:center}
+  .sub{font-size:33px;color:#2B2520;text-align:center;margin-top:6px;letter-spacing:.005em}
+
+  .chip{position:absolute;background:var(--paper);color:var(--ink);
+        font-weight:700;font-size:26px;letter-spacing:.09em;text-transform:uppercase;
+        padding:10px 16px;box-shadow:0 4px 9px rgba(60,40,10,.3)}
+  .bit{position:absolute}
+</style></head>
+<body>
+<div id="backdrop"></div>
+<div id="card">
+
+  <!-- scattered confetti, behind the collage -->
+  <svg id="confetti" width="976" height="1336" style="position:absolute;inset:0"></svg>
+
+  <!-- cut-paper mount -->
+  <svg class="torn" id="mount" width="830" height="690" style="left:72px;top:398px"></svg>
+
+  <!-- halftone patch: texture, not the subject -->
+  <img src="map_ht.png" style="position:absolute;left:470px;top:452px;width:330px;height:330px;
+       opacity:.42;transform:rotate(2deg)">
+
+  <!-- THE SUBJECT: flat black graphic illustration, high contrast -->
+  <svg width="760" height="520" style="position:absolute;left:112px;top:470px;transform:rotate(-0.8deg)">
+    <!-- sea: a heavy black convex curve -->
+    <path d="M-120 404 Q380 286 880 404 L880 470 L-120 470 Z" fill="#000"/>
+    <!-- the near ship, whole, riding high -->
+    <g transform="translate(150,214) scale(1.5)" fill="#000">
+      <rect x="47" y="4" width="6" height="64"/>
+      <path d="M56 9 L92 56 L56 66 Z"/><path d="M44 15 L13 56 L44 64 Z"/>
+      <path d="M14 68 L86 68 L73 92 L27 92 Z"/>
+    </g>
+    <!-- the far ship, hull already behind the curve: only masts remain -->
+    <g transform="translate(600,286) scale(0.74)" fill="#000">
+      <rect x="47" y="6" width="6" height="56"/>
+      <path d="M56 10 L88 52 L56 62 Z"/><path d="M44 16 L16 52 L44 60 Z"/>
+    </g>
+    <!-- red sight-line, tangent to the curve -->
+    <path d="M172 300 L664 326" stroke="#C23D38" stroke-width="5" stroke-dasharray="17 11" fill="none"/>
+    <circle cx="664" cy="326" r="11" fill="#C23D38"/>
+  </svg>
+
+  <!-- an element that breaks the mount's edge, as the reference does -->
+  <svg width="300" height="220" style="position:absolute;left:742px;top:1004px;z-index:30">
+    <g transform="rotate(-26 150 110)">
+      <path d="M12 118 L214 118" stroke="#C23D38" stroke-width="13" fill="none"/>
+      <path d="M206 92 L256 118 L206 144 Z" fill="#C23D38"/>
+    </g>
+  </svg>
+
+  <!-- torn title banner -->
+  <svg class="torn" id="banner" width="900" height="300" style="left:38px;top:92px"></svg>
+  <div style="position:absolute;left:38px;top:132px;width:900px;transform:rotate(-1.3deg)">
+    <h1>THE HORIZON<br>LIES</h1>
+    <div class="sub" style="margin-top:14px">why ships vanish hull-first</div>
+  </div>
+
+  <!-- stamped red target, sitting on the banner edge -->
+  <svg width="150" height="150" style="position:absolute;left:784px;top:232px;transform:rotate(-8deg)">
+    <g fill="none" stroke="#C23D38" stroke-width="5" opacity=".92">
+      <circle cx="75" cy="75" r="58"/><circle cx="75" cy="75" r="43" stroke-width="3"/>
+    </g>
+    <circle cx="75" cy="75" r="27" fill="#C23D38" opacity=".92"/>
+  </svg>
+
+  <!-- labels -->
+  <div class="chip" style="left:118px;top:452px;transform:rotate(-3deg)">Same ship</div>
+  <div class="chip" style="left:646px;top:900px;transform:rotate(2.4deg);background:var(--red);color:#fff">Hull gone</div>
+  <div class="chip" style="left:122px;top:1142px;transform:rotate(-1.6deg)">Gleason · 1892</div>
+
+  <!-- caution strip -->
+  <div style="position:absolute;left:0;right:0;top:1268px;transform:rotate(-0.6deg);
+              font-family:'Work Sans';font-weight:700;font-size:19px;letter-spacing:.22em;
+              color:var(--red);white-space:nowrap;overflow:hidden;opacity:.95">
+    NOT A GLOBE // NOT A GLOBE // NOT A GLOBE // NOT A GLOBE // NOT A GLOBE // NOT A GLOBE //
+  </div>
+</div>
+
+<div class="tape" style="left:66px;top:34px;transform:rotate(-24deg)"></div>
+<div class="tape" style="left:880px;top:40px;transform:rotate(19deg)"></div>
+<div class="tape" style="left:60px;top:1352px;transform:rotate(14deg)"></div>
+<div class="tape" style="left:876px;top:1346px;transform:rotate(-17deg)"></div>
+
+<!-- print grain -->
+<svg width="0" height="0"><filter id="g"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3"/></filter></svg>
+<div style="position:absolute;inset:0;pointer-events:none;opacity:.14;filter:url(#g);mix-blend-mode:multiply"></div>
+
+<script>
+/* torn paper: a hand-irregular edge, not a clean cut. Deterministic PRNG so it
+   renders identically every time. */
+function rng(seed){let s=seed;return()=>{s=(s*1664525+1013904223)%4294967296;return s/4294967296}}
+function tornRect(w,h,seed,amp){
+  // paper tears mostly straight and bites occasionally; a uniform zigzag reads as cut card
+  const r=rng(seed),p=[];
+  const edge=(len,fn)=>{let d=0;while(d<len){d=Math.min(len,d+7+r()*17);
+    const bite=(r()<0.22? amp : amp*0.30)*(r()-0.5)*2; p.push(fn(d,bite));}};
+  edge(w,(d,b)=>[d, amp*0.6+b]);
+  edge(h,(d,b)=>[w-amp*0.6+b, d]);
+  edge(w,(d,b)=>[w-d, h-amp*0.6+b]);
+  edge(h,(d,b)=>[amp*0.6+b, h-d]);
+  return 'M'+p.map(q=>q[0].toFixed(1)+' '+q[1].toFixed(1)).join('L')+'Z';
+}
+function fill(id,w,h,seed,amp,rot){
+  const s=document.getElementById(id);
+  s.innerHTML='<path d="'+tornRect(w,h,seed,amp)+'" fill="#EBE8DE"/>';
+  if(rot) s.style.transform='rotate('+rot+'deg)';
+}
+fill('banner',900,236,7,9,-1.3);
+fill('mount',830,690,21,11,0.8);
+
+/* confetti: small black / red / cream bits, rotated, never on a grid */
+(function(){
+  const s=document.getElementById('confetti'),r=rng(99),cols=['#000000','#C23D38','#EBE8DE'];
+  let out='';
+  for(let i=0;i<54;i++){
+    const x=r()*976,y=300+r()*1010,c=cols[Math.floor(r()*3)],a=r()*360,sz=8+r()*18;
+    out += r()<0.45
+      ? `<polygon points="0,0 ${sz},${sz*0.4} ${sz*0.3},${sz}" fill="${c}" opacity="1" transform="translate(${x},${y}) rotate(${a})"/>`
+      : `<rect width="${sz}" height="${sz*0.6}" fill="${c}" opacity="1" transform="translate(${x},${y}) rotate(${a})"/>`;
+  }
+  s.innerHTML=out;
+})();
+</script>
+</body></html>

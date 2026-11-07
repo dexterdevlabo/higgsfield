@@ -94,6 +94,13 @@ Read only what the current stage needs. Do not preload everything.
 | `references/technical-production.md` | tooling, ffmpeg/Remotion recipes, render settings |
 | `references/quality-control.md` | stage 10; pre-export audit |
 | `references/formats-and-reframing.md` | 9:16 / short-form recomposition |
+| `references/style-paper-collage.md` | the Mustard Paper Collage preset — torn paper, screen-print, halftone collage |
+
+Named style presets live alongside the craft references. A preset is a complete, measured
+art direction you can adopt wholesale instead of deriving one from scratch — it still has to
+be justified against the subject, and `visual-art-direction.md` still governs. Currently:
+**Mustard Paper Collage** (`references/style-paper-collage.md`), with a rendering worked
+example in `examples/paper-collage-poster.html`.
 
 Starter files live in `templates/` — `PROJECT.md`, `STORYBOARD.md`, `ASSETS.md` and
 `art.json`. Copy them into a new project directory at stage 1 rather than writing the
