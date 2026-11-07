@@ -86,6 +86,20 @@ engravings) must be blur-then-thresholded or it renders as sparse specks.
 - **flow-mcp** — not installed; cannot run in this Linux container (needs macOS/Windows, a
   visible screen, and the user's Google login). It *would* run on the user's own Mac.
 
+## Credentials — standing rule
+
+The user has supplied a **Higgsfield API key**. Its value is deliberately **not recorded in
+this repo, in any file, or in any commit** — only the rule is.
+
+**Do not use it without explicit, per-use approval from the user.** They granted no standing
+permission; one approval does not carry to the next use. Higgsfield generations also spend
+real credits (`unlim.available: false` when last checked), so quote the cost and get a yes
+before any `generate_*` call regardless.
+
+If it ever needs to be made available to tooling, route it through the environment's secret
+store (`request_credential`), which injects it at the proxy and never exposes the value to
+the session. Never put it in a file, an env var committed to the repo, or a chat message.
+
 ## The user's machine
 
 **16GB Intel i7 Mac.** This matters: Intel means **no Apple Silicon, no MLX**, so local video
