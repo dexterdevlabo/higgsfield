@@ -68,6 +68,16 @@ engravings) must be blur-then-thresholded or it renders as sparse specks.
 - Don't invent statistics to fill a beat — use a question instead.
 - No brand logos, packaging or product photography in spec work.
 
+## Standing tool rules
+
+- **Always use ponytail.** Lazy-senior mode: smallest complete change, no unasked-for
+  abstraction, end each reply with what was skipped and any risk. Active now.
+- **Always use graphify** for questions about this codebase — **currently impossible.** Its
+  skill invokes a `graphify` CLI 33 times and that CLI is not installed; `pip install
+  graphifyy` has been denied twice by the permission classifier (plain install and
+  `--target`, both wheel-only). Honour this rule as soon as the CLI exists; until then say so
+  rather than pretending to use it.
+
 ## Environment constraints
 
 - **The permission classifier blocks external code execution**: `npx`, `npm install` with
