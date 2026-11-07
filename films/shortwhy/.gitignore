@@ -1,0 +1,5 @@
+# Regenerable by src/build.sh
+assets/raw/
+assets/prepared/
+assets/audio/*.wav
+build/
