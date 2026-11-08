@@ -21,3 +21,5 @@ venv/
 # films/jobs: archival footage is fetched by src/fetch_footage.py, not committed
 films/jobs/src/assets/footage/
 films/jobs/src/assets/mix.wav
+films/jobs/build/
+films/jobs/out/*.mp4
