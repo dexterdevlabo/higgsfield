@@ -17,3 +17,11 @@ venv/
 .idea/
 .vscode/
 
+
+# films/jobs: archival footage is fetched by src/fetch_footage.py, not committed
+films/jobs/src/assets/footage/
+films/jobs/src/assets/mix.wav
+films/jobs/build/
+# render output and HyperFrames' transient scratch — large, and reproducible
+films/jobs/out/*
+!films/jobs/out/*.srt

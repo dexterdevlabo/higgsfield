@@ -1,0 +1,201 @@
+<!doctype html>
+<!--
+  Kids-shorts 9:16 skeleton. Renders as-is with placeholder art so a new short starts from
+  something that already works. Replace the .plate blocks with generated stills.
+
+  Safe areas are drawn as guides; set data-guides="off" on #root to hide them.
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<style>
+  @font-face{font-family:'Display';src:url('assets/fonts/Boldonse-Regular.ttf') format('truetype');font-display:block}
+  @font-face{font-family:'Body';src:url('assets/fonts/WorkSans-Regular.ttf') format('truetype');font-weight:400;font-display:block}
+  @font-face{font-family:'Body';src:url('assets/fonts/WorkSans-Bold.ttf') format('truetype');font-weight:700;font-display:block}
+
+  :root{
+    --bg:#10243A; --bg2:#17364F;
+    --sun:#FFC24A; --leaf:#4FB477; --coral:#FF7A5C; --sky:#7CC5F2;
+    --ink:#0B1722; --paper:#FFF7E8;
+    /* safe area, the intersection of Shorts / Reels / TikTok */
+    --safe-top:270px; --safe-bottom:500px; --safe-right:130px; --safe-left:65px;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{width:1080px;height:1920px;background:var(--bg);overflow:hidden;font-family:'Body',sans-serif}
+  #root{position:relative;width:1080px;height:1920px;background:var(--bg);overflow:hidden}
+  .scene{position:absolute;inset:0;overflow:hidden}
+
+  /* a generated still lives here; the wrapper does the Ken Burns so the image never re-renders */
+  .plate{position:absolute;inset:0;overflow:hidden}
+  .plate img{position:absolute;left:50%;top:50%;width:1200px;height:2140px;
+             transform:translate(-50%,-50%);object-fit:cover;will-change:transform}
+  .scrim{position:absolute;inset:0;pointer-events:none;
+    background:linear-gradient(180deg,rgba(16,36,58,.86) 0%,rgba(16,36,58,.15) 26%,
+               rgba(16,36,58,0) 46%,rgba(16,36,58,.72) 76%,rgba(16,36,58,.94) 100%)}
+
+  .title{font-family:'Display';font-size:72px;line-height:1.24;color:var(--paper);
+         letter-spacing:-.01em}
+  .kicker{font-weight:700;font-size:30px;letter-spacing:.16em;text-transform:uppercase;color:var(--sun)}
+  .big{font-family:'Display';font-size:190px;line-height:1;color:var(--sun)}
+
+  /* caption band — always on, inside the safe core */
+  /* z-index must beat every scene (10-50) or the opaque scene backgrounds hide the
+     captions and the film ships silently uncaptioned. */
+  #cap{position:absolute;left:var(--safe-left);right:var(--safe-right);bottom:var(--safe-bottom);
+       z-index:150;text-align:center;font-weight:700;font-size:54px;line-height:1.22;color:#fff;
+       text-shadow:0 4px 18px rgba(0,0,0,.75)}
+
+  /* safe-area guides, render-time only */
+  #guides{position:absolute;inset:0;pointer-events:none;z-index:200}
+  #guides div{position:absolute;background:rgba(255,80,80,.17)}
+  [data-guides="off"] #guides{display:none}
+</style>
+</head>
+<body>
+<div id="root" data-composition-id="root" data-width="1080" data-height="1920" data-fps="30"
+     data-guides="on">
+
+  <!-- ===== beat 1 · DRAWN · hook ===== -->
+  <div class="scene" id="s1" data-start="0" data-duration="3.0" style="z-index:10;background:var(--bg)">
+    <svg width="1080" height="1920" style="position:absolute;inset:0">
+      <circle cx="540" cy="760" r="300" fill="#17364F"/>
+      <circle cx="540" cy="760" r="210" fill="var(--sun)" opacity=".92"/>
+    </svg>
+    <div style="position:absolute;left:var(--safe-left);right:var(--safe-right);top:330px;text-align:center">
+      <div id="k1" class="kicker">Did you know?</div>
+      <div id="t1" class="title" style="margin-top:22px">Why is<br>the sky blue?</div>
+    </div>
+  </div>
+
+  <!-- ===== beat 2 · GENERATED · a still, animated ===== -->
+  <div class="scene" id="s2" data-start="3.0" data-duration="3.4" style="z-index:20">
+    <div class="plate"><img id="p2" src="assets/generated/beat2.png" alt=""></div>
+    <div class="scrim"></div>
+    <div style="position:absolute;left:var(--safe-left);right:var(--safe-right);top:300px">
+      <div id="t2" class="title" style="font-size:78px">Sunlight looks white.</div>
+    </div>
+  </div>
+
+  <!-- ===== beat 3 · DRAWN · the diagram ===== -->
+  <div class="scene" id="s3" data-start="6.4" data-duration="3.6" style="z-index:30;background:var(--bg)">
+    <svg width="1080" height="1920" style="position:absolute;inset:0">
+      <g id="prism">
+        <path d="M400 940 L680 940 L540 700 Z" fill="none" stroke="var(--paper)" stroke-width="7"/>
+        <path id="beamIn" d="M80 870 L452 870" stroke="var(--paper)" stroke-width="10" fill="none"/>
+        <g id="fan" stroke-width="9" fill="none">
+          <path d="M628 880 L1000 790" stroke="var(--coral)"/>
+          <path d="M628 890 L1000 870" stroke="var(--sun)"/>
+          <path d="M628 900 L1000 950" stroke="var(--leaf)"/>
+          <path d="M628 910 L1000 1030" stroke="var(--sky)"/>
+        </g>
+      </g>
+    </svg>
+    <div style="position:absolute;left:var(--safe-left);right:var(--safe-right);top:330px;text-align:center">
+      <div id="t3" class="title" style="font-size:72px">…but it hides<br>every colour.</div>
+    </div>
+  </div>
+
+  <!-- ===== beat 4 · DRAWN · the number ===== -->
+  <div class="scene" id="s4" data-start="10.0" data-duration="3.0" style="z-index:40;background:var(--bg2)">
+    <div style="position:absolute;left:var(--safe-left);right:var(--safe-right);top:560px;text-align:center">
+      <div id="n4" class="big" style="opacity:1">0</div>
+      <div id="t4" class="title" style="font-size:64px;margin-top:10px">minutes to reach us</div>
+    </div>
+  </div>
+
+  <!-- ===== beat 5 · DRAWN · sign-off ===== -->
+  <div class="scene" id="s5" data-start="13.0" data-duration="2.6" style="z-index:50;background:var(--bg)">
+    <div style="position:absolute;left:var(--safe-left);right:var(--safe-right);top:620px;text-align:center">
+      <div id="t5" class="title" style="opacity:1">Blue light bounces<br>the most.</div>
+      <div id="t5b" class="kicker" style="margin-top:34px">That's the whole trick</div>
+    </div>
+  </div>
+
+  <div id="cap"></div>
+
+  <audio id="mix" data-start="0" data-duration="15.6" data-volume="1" data-fade-out="0.4"
+         src="assets/mix.wav"></audio>
+
+  <!-- safe-area guides -->
+  <div id="guides">
+    <div style="left:0;right:0;top:0;height:var(--safe-top)"></div>
+    <div style="left:0;right:0;bottom:0;height:var(--safe-bottom)"></div>
+    <div style="right:0;top:0;bottom:0;width:var(--safe-right)"></div>
+    <div style="left:0;top:0;bottom:0;width:var(--safe-left)"></div>
+  </div>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script>
+(function(){
+  const tl = gsap.timeline({paused:true});
+  const IN="power3.out", OUT="power2.in";
+
+  /* ---- captions ----
+     Dwell is computed, not guessed: 0.6s + 0.25s per word, floored at the age band's
+     minimum (see references/child-safety.md). AGE_MIN below is the 6-9 figure. */
+  const AGE_MIN = 1.8;
+  const CAPTIONS = [
+    [0.2,  "Why is the sky blue?"],
+    [3.1,  "Sunlight looks white."],
+    [6.5,  "But it hides every colour."],
+    [10.1, "Light takes 8 minutes to reach us."],
+    [13.1, "Blue light bounces the most."]
+  ];
+  const cap = document.getElementById('cap');
+  CAPTIONS.forEach(([t, text]) => {
+    const el = document.createElement('div');
+    el.textContent = text; el.style.opacity = 0;
+    el.style.position = 'absolute'; el.style.left = 0; el.style.right = 0; el.style.bottom = 0;
+    cap.appendChild(el);
+    const dwell = Math.max(AGE_MIN, 0.6 + 0.25 * text.split(' ').length);
+    tl.fromTo(el, {opacity:0, y:14}, {opacity:1, y:0, duration:.26, ease:IN}, t);
+    tl.to(el, {opacity:0, duration:.20, ease:OUT}, t + dwell);
+  });
+
+  /* Every scene must carry something bright on its FIRST frame. A gsap fromTo starting
+     from opacity 0 is still 0 at that instant, so the cut opens on an empty frame and
+     qc_luma.py flags it. Beats 4 and 5 below keep their first element statically visible
+     and animate only scale/position. */
+
+  /* ---- beat 1 ---- */
+  tl.fromTo("#k1",{opacity:0,y:16},{opacity:1,y:0,duration:.34,ease:IN},0.10);
+  tl.fromTo("#t1",{opacity:0,y:26},{opacity:1,y:0,duration:.44,ease:IN},0.26);
+
+  /* ---- beat 2 · Ken Burns on the generated still: one image, a moving shot ---- */
+  tl.fromTo("#p2",{scale:1.00,x:0,y:0},{scale:1.10,x:-26,y:14,duration:3.4,ease:"none"},3.0);
+  tl.fromTo("#t2",{opacity:0,y:22},{opacity:1,y:0,duration:.40,ease:IN},3.12);
+
+  /* ---- beat 3 · the diagram draws itself ---- */
+  const beam = document.getElementById('beamIn');
+  const L = beam.getTotalLength();
+  beam.style.strokeDasharray = L; beam.style.strokeDashoffset = L;
+  tl.to(beam,{strokeDashoffset:0,duration:.70,ease:"none"},6.55);
+  gsap.utils.toArray("#fan path").forEach((p,i)=>{
+    const l = p.getTotalLength();
+    p.style.strokeDasharray = l; p.style.strokeDashoffset = l;
+    tl.to(p,{strokeDashoffset:0,duration:.60,ease:IN}, 7.25 + i*0.10);
+  });
+  tl.fromTo("#t3",{opacity:0,y:20},{opacity:1,y:0,duration:.38,ease:IN},6.52);
+
+  /* ---- beat 4 · the number counts ---- */
+  tl.fromTo("#t4",{opacity:0,y:18},{opacity:1,y:0,duration:.34,ease:IN},10.22);
+  const n4 = document.getElementById('n4');
+  const counter = {v:0};
+  tl.fromTo(n4,{scale:.92},{scale:1,duration:.36,ease:"back.out(1.5)"},10.00);
+  tl.to(counter,{v:8,duration:1.0,ease:"power1.out",
+    onUpdate:()=>{ n4.textContent = Math.round(counter.v); }},10.20);
+
+  /* ---- beat 5 ---- */
+  tl.fromTo("#t5",{y:22},{y:0,duration:.42,ease:IN},13.00);
+  tl.fromTo("#t5b",{opacity:0,y:14},{opacity:1,y:0,duration:.34,ease:IN},13.46);
+
+  /* hold to the full duration — the renderer takes the film's length from this timeline */
+  tl.to("#t5b",{opacity:1,duration:.70,ease:"none"},14.90);
+
+  window.__timelines = window.__timelines || {};
+  window.__timelines["root"] = tl;
+})();
+</script>
+</div>
+</body>
+</html>

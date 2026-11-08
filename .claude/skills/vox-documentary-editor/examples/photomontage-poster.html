@@ -1,0 +1,142 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+  @font-face{font-family:'Boldonse';src:url('Boldonse-Regular.ttf') format('truetype');font-display:block}
+  @font-face{font-family:'Crimson';src:url('CrimsonPro-Regular.ttf') format('truetype');font-weight:400;font-display:block}
+  @font-face{font-family:'Work Sans';src:url('WorkSans-Bold.ttf') format('truetype');font-weight:700;font-display:block}
+
+  /* measured from reference sheet 2 */
+  :root{
+    --ground:#1A595F;    /* one of nine; sat .10-.81, val .13-.79 — aged ink, never pure */
+    --paper:#EBE5D0;     /* warmer than preset A's #EBE8DE; only ~7% of frame here */
+    --key:#EFE9D6;       /* the die-cut keyline */
+    --ink:#211F1B;
+    --gold:#C29532;      /* ~0.1% of frame. A tag, never a region. */
+    --tape:rgba(234,224,196,.74);
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{width:1080px;height:1440px;background:#141414;overflow:hidden;font-family:'Work Sans',sans-serif}
+  #card{position:absolute;inset:0;background:var(--ground)}
+  /* aged ink mottle + edge darkening */
+  #card:after{content:'';position:absolute;inset:0;pointer-events:none;
+    background:radial-gradient(ellipse 72% 60% at 50% 42%,rgba(255,255,255,.10) 0%,transparent 62%),
+               radial-gradient(ellipse 100% 100% at 50% 50%,transparent 52%,rgba(0,0,0,.42) 100%)}
+
+  .tape{position:absolute;width:156px;height:46px;background:var(--tape);z-index:60;
+        box-shadow:0 2px 6px rgba(0,0,0,.3)}
+  .tape:before,.tape:after{content:'';position:absolute;top:0;bottom:0;width:7px;background:inherit}
+  .tape:before{left:-6px;clip-path:polygon(100% 0,0 16%,100% 33%,0 56%,100% 74%,0 100%,100% 100%)}
+  .tape:after{right:-6px;clip-path:polygon(0 0,100% 15%,0 31%,100% 53%,0 75%,100% 100%,0 100%)}
+
+  h1{font-family:'Boldonse';font-size:72px;line-height:.98;color:var(--ink);
+     letter-spacing:-.015em;text-align:center}
+  .sub{font-family:'Crimson';font-size:36px;color:#2E2A24;text-align:center;margin-top:16px}
+
+  .chip{position:absolute;background:var(--gold);color:#1A1203;font-weight:700;font-size:27px;
+        letter-spacing:.1em;text-transform:uppercase;padding:11px 18px;
+        box-shadow:0 5px 10px rgba(0,0,0,.4)}
+  .caption{position:absolute;left:0;right:0;bottom:62px;text-align:center;
+           font-family:'Crimson';font-size:29px;color:rgba(239,233,214,.86)}
+</style></head>
+<body>
+<div id="card">
+  <svg id="rays" width="1080" height="1440" style="position:absolute;inset:0"></svg>
+  <svg id="confetti" width="1080" height="1440" style="position:absolute;inset:0;z-index:25"></svg>
+
+  <!-- die-cut halftone disc, raster keyline baked in -->
+  <img src="disc_st.png" style="position:absolute;left:226px;top:470px;width:628px;height:628px;
+       transform:rotate(-1.4deg);filter:drop-shadow(0 10px 16px rgba(0,0,0,.45));z-index:20">
+
+  <!-- flat vector elements: keyline via stroke + paint-order -->
+  <svg width="1080" height="1440" style="position:absolute;inset:0;z-index:22">
+    <g paint-order="stroke" stroke="#EFE9D6" stroke-width="13" stroke-linejoin="round">
+      <!-- surveyor figure -->
+      <g fill="#211F1B" transform="translate(812,790) rotate(3) scale(1.45)">
+        <circle cx="42" cy="26" r="25"/>
+        <path d="M20 58 H64 L72 150 H58 L52 196 H32 L26 150 H12 Z"/>
+        <path d="M64 70 L128 44 L134 62 L68 92 Z"/>
+      </g>
+      <!-- tripod / theodolite -->
+      <g fill="#211F1B" transform="translate(960,836) rotate(-2) scale(1.2)">
+        <rect x="18" y="0" width="54" height="26" rx="3"/>
+        <path d="M42 26 L16 148 H28 L46 44 L64 148 H76 Z"/>
+      </g>
+      <!-- a ship, hull cut by the disc's edge -->
+      <g fill="#211F1B" transform="translate(126,836) rotate(-4) scale(1.7)">
+        <rect x="47" y="2" width="7" height="58"/>
+        <path d="M57 7 L92 50 L57 60 Z"/><path d="M44 13 L14 50 L44 58 Z"/>
+        <path d="M14 62 L88 62 L74 86 L28 86 Z"/>
+      </g>
+    </g>
+  </svg>
+
+  <!-- torn banner -->
+  <svg id="banner" width="960" height="318" style="position:absolute;left:60px;top:88px;z-index:30;
+       filter:drop-shadow(0 8px 12px rgba(0,0,0,.42))"></svg>
+  <div style="position:absolute;left:60px;top:132px;width:960px;z-index:31;transform:rotate(-1deg)">
+    <h1>WHO FLATTENED<br>THE EARTH?</h1>
+    <div class="sub">the map that refuses to die</div>
+  </div>
+
+  <!-- rosette seal beside the subtitle, as the reference has -->
+  <svg width="86" height="86" style="position:absolute;left:150px;top:300px;z-index:32;opacity:.55">
+    <g fill="none" stroke="#2E2A24" stroke-width="2.5">
+      <circle cx="43" cy="43" r="31"/><circle cx="43" cy="43" r="23" stroke-dasharray="4 4"/>
+    </g>
+  </svg>
+
+  <div class="chip" style="left:742px;top:1066px;transform:rotate(2.6deg);z-index:35">1892</div>
+  <div class="chip" style="left:122px;top:1108px;transform:rotate(-2deg);z-index:35;
+       background:var(--paper);color:var(--ink)">still printed</div>
+
+  <div class="caption">a Victorian error, still in circulation</div>
+</div>
+
+<div class="tape" style="left:46px;top:62px;transform:rotate(-23deg)"></div>
+<div class="tape" style="left:880px;top:66px;transform:rotate(20deg)"></div>
+<div class="tape" style="left:-34px;top:700px;transform:rotate(84deg)"></div>
+<div class="tape" style="left:962px;top:704px;transform:rotate(96deg)"></div>
+
+<svg width="0" height="0"><filter id="g"><feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="3"/></filter></svg>
+<div style="position:absolute;inset:0;pointer-events:none;opacity:.16;filter:url(#g);mix-blend-mode:multiply;z-index:70"></div>
+
+<script>
+function rng(s){return()=>{s=(s*1664525+1013904223)%4294967296;return s/4294967296}}
+/* torn edge: mostly straight with occasional bites (see style-paper-collage.md) */
+function tornRect(w,h,seed,amp){
+  const r=rng(seed),p=[];
+  const edge=(len,fn)=>{let d=0;while(d<len){d=Math.min(len,d+7+r()*17);
+    const bite=(r()<0.22?amp:amp*0.30)*(r()-0.5)*2;p.push(fn(d,bite));}};
+  edge(w,(d,b)=>[d,amp*0.6+b]); edge(h,(d,b)=>[w-amp*0.6+b,d]);
+  edge(w,(d,b)=>[w-d,h-amp*0.6+b]); edge(h,(d,b)=>[amp*0.6+b,h-d]);
+  return 'M'+p.map(q=>q[0].toFixed(1)+' '+q[1].toFixed(1)).join('L')+'Z';
+}
+document.getElementById('banner').innerHTML =
+  '<path d="'+tornRect(960,296,11,10)+'" fill="#EBE5D0"/>';
+document.getElementById('banner').style.transform='rotate(-1deg)';
+
+/* sunburst: tapered rays from behind the subject, low contrast against the ground */
+(function(){
+  const cx=540,cy=790,N=26,R=620;let o='';
+  for(let i=0;i<N;i++){
+    const a=(i/N)*Math.PI*2, w=0.021;
+    const p=[[cx,cy],
+      [cx+Math.cos(a-w)*R, cy+Math.sin(a-w)*R],
+      [cx+Math.cos(a+w)*R, cy+Math.sin(a+w)*R]];
+    o+=`<polygon points="${p.map(q=>q[0].toFixed(0)+','+q[1].toFixed(0)).join(' ')}" fill="#EFE9D6" opacity="${i%2?0.085:0.045}"/>`;
+  }
+  document.getElementById('rays').innerHTML=o;
+})();
+
+(function(){
+  const r=rng(5),cols=['#211F1B','#C29532','#EFE9D6'];let o='';
+  for(let i=0;i<46;i++){
+    const x=r()*1080,y=380+r()*960,c=cols[Math.floor(r()*3)],a=r()*360,s=7+r()*16;
+    o += r()<0.5
+      ? `<polygon points="0,0 ${s},${s*0.4} ${s*0.3},${s}" fill="${c}" transform="translate(${x},${y}) rotate(${a})"/>`
+      : `<rect width="${s}" height="${s*0.55}" fill="${c}" transform="translate(${x},${y}) rotate(${a})"/>`;
+  }
+  document.getElementById('confetti').innerHTML=o;
+})();
+</script>
+</body></html>

@@ -1,0 +1,4 @@
+# Regenerable by src/build.sh — originals are not redistributed here
+assets/raw/
+assets/prepared/
+assets/audio/*.wav

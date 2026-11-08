@@ -1,0 +1,298 @@
+<!doctype html>
+<!--
+  How a bee draws a map — 44.0s · 1080x1920 · 30fps
+  Renders NOW with drawn placeholders in assets/generated/. When the three images exist,
+  they drop into the same three <img> slots and nothing else changes.
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<style>
+  @font-face{font-family:'Display';src:url('assets/fonts/Boldonse-Regular.ttf') format('truetype');font-display:block}
+  @font-face{font-family:'Body';src:url('assets/fonts/WorkSans-Regular.ttf') format('truetype');font-weight:400;font-display:block}
+  @font-face{font-family:'Body';src:url('assets/fonts/WorkSans-Bold.ttf') format('truetype');font-weight:700;font-display:block}
+
+  :root{
+    --dark:#1B1206; --dark2:#2A1C0C; --honey:#F2A81D; --amber:#D97B18;
+    --cream:#FFF4DF; --leaf:#5AA55F; --sky:#6FB7E8; --ink:#2A1C0C;
+    --safe-top:270px; --safe-bottom:500px; --safe-right:130px; --safe-left:65px;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{width:1080px;height:1920px;background:var(--dark);overflow:hidden;font-family:'Body',sans-serif}
+  #root{position:relative;width:1080px;height:1920px;background:var(--dark);overflow:hidden}
+  .scene{position:absolute;inset:0;overflow:hidden}
+  .plate{position:absolute;inset:0;overflow:hidden}
+  .plate img{position:absolute;left:50%;top:50%;width:1240px;height:2200px;
+             transform:translate(-50%,-50%);object-fit:cover;will-change:transform}
+  .scrim{position:absolute;inset:0;pointer-events:none;
+    background:linear-gradient(180deg,rgba(27,18,6,.88) 0%,rgba(27,18,6,.20) 25%,
+               rgba(27,18,6,0) 45%,rgba(27,18,6,.70) 74%,rgba(27,18,6,.95) 100%)}
+
+  .title{font-family:'Display';font-size:68px;line-height:1.24;color:var(--cream);letter-spacing:-.01em}
+  .kicker{font-weight:700;font-size:28px;letter-spacing:.17em;text-transform:uppercase;color:var(--honey)}
+  .lab{font-weight:700;font-size:30px;letter-spacing:.07em;fill:var(--cream)}
+
+  /* captions must out-rank every scene or the opaque backgrounds hide them silently */
+  #cap{position:absolute;left:var(--safe-left);right:var(--safe-right);bottom:var(--safe-bottom);
+       z-index:150;text-align:center;font-weight:700;font-size:50px;line-height:1.30;color:#fff;
+       text-shadow:0 4px 18px rgba(0,0,0,.8)}
+  #guides{position:absolute;inset:0;pointer-events:none;z-index:200}
+  #guides div{position:absolute;background:rgba(255,80,80,.16)}
+  [data-guides="off"] #guides{display:none}
+</style>
+</head>
+<body>
+<div id="root" data-composition-id="root" data-width="1080" data-height="1920" data-fps="30"
+     data-guides="on">
+
+  <!-- 1 · GEN-2 meadow -->
+  <div class="scene" id="s1" data-start="0" data-duration="3.8" style="z-index:10">
+    <div class="plate"><img id="p1" src="assets/generated/gen2_meadow.png" alt=""></div>
+    <div class="scrim"></div>
+    <div style="position:absolute;left:var(--safe-left);right:var(--safe-right);top:300px">
+      <div id="t1" class="title" style="opacity:1">A bee just found<br>a field of flowers.</div>
+    </div>
+  </div>
+
+  <!-- 2 · GEN-1 hive -->
+  <div class="scene" id="s2" data-start="3.7" data-duration="4.1" style="z-index:20">
+    <div class="plate"><img id="p2" src="assets/generated/gen1_hive.png" alt=""></div>
+    <div class="scrim"></div>
+    <div style="position:absolute;left:var(--safe-left);right:var(--safe-right);top:300px">
+      <div id="t2" class="title" style="opacity:1">Now she has to tell<br>the others.</div>
+      <div id="t2b" class="kicker" style="opacity:0;margin-top:26px">in the dark</div>
+    </div>
+  </div>
+
+  <!-- 3 · DRAWN · she begins -->
+  <div class="scene" id="s3" data-start="7.7" data-duration="4.1" style="z-index:30;background:var(--dark2)">
+    <svg id="comb3" width="1080" height="1920" style="position:absolute;inset:0"></svg>
+    <svg width="1080" height="1920" style="position:absolute;inset:0">
+      <g transform="translate(540,880)"><g id="bee3"><g transform="scale(2.4)">
+        <ellipse rx="26" ry="38" fill="#F2A81D"/>
+        <rect x="-26" y="-14" width="52" height="9" fill="#2A1C0C"/>
+        <rect x="-26" y="6" width="52" height="9" fill="#2A1C0C"/>
+        <ellipse cx="-32" cy="-18" rx="24" ry="13" fill="#FFF4DF" opacity=".62" transform="rotate(-24 -32 -18)"/>
+        <ellipse cx="32" cy="-18" rx="24" ry="13" fill="#FFF4DF" opacity=".62" transform="rotate(24 32 -18)"/>
+      </g></g></g>
+    </svg>
+    <div style="position:absolute;left:var(--safe-left);right:var(--safe-right);top:310px;text-align:center">
+      <div id="t3" class="title" style="opacity:1;font-size:80px">So she dances.</div>
+    </div>
+  </div>
+
+  <!-- 4 · DRAWN · the figure of eight -->
+  <div class="scene" id="s4" data-start="11.7" data-duration="5.9" style="z-index:40;background:var(--dark2)">
+    <svg id="comb4" width="1080" height="1920" style="position:absolute;inset:0"></svg>
+    <svg width="1080" height="1920" style="position:absolute;inset:0">
+      <path id="fig8" fill="none" stroke="#F2A81D" stroke-width="12" stroke-linecap="round"/>
+      <path id="wag" fill="none" stroke="#FFF4DF" stroke-width="14" stroke-linecap="round"/>
+    </svg>
+    <div style="position:absolute;left:var(--safe-left);right:var(--safe-right);top:300px;text-align:center">
+      <div id="t4" class="title" style="opacity:1;font-size:76px">A figure of eight.</div>
+      <div id="t4b" class="kicker" style="opacity:0;margin-top:24px">over and over</div>
+    </div>
+  </div>
+
+  <!-- 5 · GEN-3 bee + DRAWN angle overlay -->
+  <div class="scene" id="s5" data-start="17.5" data-duration="6.4" style="z-index:50">
+    <div class="plate"><img id="p5" src="assets/generated/gen3_dancer.png" alt=""></div>
+    <div class="scrim"></div>
+    <svg width="1080" height="1920" style="position:absolute;inset:0">
+      <g id="ang" transform="translate(540,900)">
+        <line id="vert" x1="0" y1="0" x2="0" y2="-300" stroke="#FFF4DF" stroke-width="7"
+              stroke-dasharray="14 12" opacity=".85"/>
+        <line id="tilt" x1="0" y1="0" x2="0" y2="-300" stroke="#F2A81D" stroke-width="13"/>
+        <path id="arc" d="M0 -150 A150 150 0 0 1 0 -150" fill="none" stroke="#F2A81D" stroke-width="7"/>
+      </g>
+    </svg>
+    <div style="position:absolute;left:var(--safe-left);right:var(--safe-right);top:290px">
+      <div id="t5" class="title" style="opacity:1">The way she tilts…</div>
+      <div id="t5b" class="title" style="opacity:0;color:var(--honey)">…is the way<br>to the flowers.</div>
+    </div>
+  </div>
+
+  <!-- 6 · DRAWN · straight up = the sun -->
+  <div class="scene" id="s6" data-start="23.8" data-duration="5.3" style="z-index:60;background:var(--dark2)">
+    <svg width="1080" height="1920" style="position:absolute;inset:0">
+      <g transform="translate(540,640)"><g id="sun6">
+        <circle r="92" fill="#F2A81D"/>
+        <g id="rays6" stroke="#F2A81D" stroke-width="10" stroke-linecap="round"></g>
+      </g></g>
+      <path id="up6" d="M540 1180 L540 800" stroke="#FFF4DF" stroke-width="14"
+            fill="none" stroke-linecap="round"/>
+      <path id="uphead" d="M510 840 L540 790 L570 840 Z" fill="#FFF4DF" opacity="0"/>
+      <g transform="translate(540,1240)">
+        <rect x="-110" y="-36" width="220" height="72" rx="10" fill="#D97B18"/>
+        <text x="0" y="12" text-anchor="middle" class="lab" fill="#2A1C0C">HIVE</text>
+      </g>
+    </svg>
+    <div style="position:absolute;left:var(--safe-left);right:var(--safe-right);top:300px;text-align:center">
+      <div id="t6" class="title" style="opacity:1">Straight up means:<br>fly toward the sun.</div>
+    </div>
+  </div>
+
+  <!-- 7 · DRAWN · longer waggle = further -->
+  <div class="scene" id="s7" data-start="29.0" data-duration="5.6" style="z-index:70;background:var(--dark2)">
+    <svg width="1080" height="1920" style="position:absolute;inset:0">
+      <rect x="120" y="860" width="840" height="34" rx="17" fill="#3A2A12"/>
+      <rect id="bar7" x="120" y="860" width="0" height="34" rx="17" fill="#F2A81D"/>
+      <g transform="translate(140,1010)"><g id="flower7">
+        <circle r="34" fill="#5AA55F"/><circle r="15" fill="#FFF4DF"/>
+      </g></g>
+      <text x="120" y="820" class="lab" font-size="28">waggle</text>
+    </svg>
+    <div style="position:absolute;left:var(--safe-left);right:var(--safe-right);top:300px;text-align:center">
+      <div id="t7" class="title" style="opacity:1">The longer<br>she waggles…</div>
+      <div id="t7b" class="title" style="opacity:0;font-size:64px;color:var(--honey);margin-top:14px">…the further you go.</div>
+    </div>
+  </div>
+
+  <!-- 8 · DRAWN · von Frisch -->
+  <div class="scene" id="s8" data-start="34.5" data-duration="5.4" style="z-index:80;background:var(--dark)">
+    <div style="position:absolute;left:var(--safe-left);right:var(--safe-right);top:620px;text-align:center">
+      <div id="t8k" class="kicker" style="opacity:1">Worked out by</div>
+      <div id="t8" class="title" style="margin-top:22px;opacity:0;font-size:80px">Karl von Frisch</div>
+      <div id="t8r" style="margin:34px auto 0;height:5px;width:0;background:var(--honey)"></div>
+      <div id="t8b" class="kicker" style="opacity:0;margin-top:30px;color:var(--cream)">Nobel Prize · 1973</div>
+    </div>
+  </div>
+
+  <!-- 9 · reuse of GEN-1, tighter -->
+  <div class="scene" id="s9" data-start="39.8" data-duration="4.2" style="z-index:90">
+    <div class="plate"><img id="p9" src="assets/generated/gen1_hive.png" alt=""
+         style="width:1600px;height:2840px;filter:brightness(.68)"></div>
+    <div class="scrim"></div>
+    <div style="position:absolute;left:var(--safe-left);right:var(--safe-right);top:560px;text-align:center">
+      <div id="t9" class="title" style="opacity:1;font-size:72px">A bee drew a map.</div>
+      <div id="t9b" class="title" style="opacity:0;font-size:62px;margin-top:22px">With her body.</div>
+      <div id="t9c" class="title" style="opacity:0;font-size:62px;color:var(--honey);margin-top:14px">In the dark.</div>
+    </div>
+  </div>
+
+  <div id="cap"></div>
+
+  <audio id="mix" data-start="0" data-duration="44" data-volume="1" data-fade-out="0.5"
+         src="assets/mix.wav"></audio>
+
+  <div id="guides">
+    <div style="left:0;right:0;top:0;height:var(--safe-top)"></div>
+    <div style="left:0;right:0;bottom:0;height:var(--safe-bottom)"></div>
+    <div style="right:0;top:0;bottom:0;width:var(--safe-right)"></div>
+    <div style="left:0;top:0;bottom:0;width:var(--safe-left)"></div>
+  </div>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script>
+(function(){
+  const tl = gsap.timeline({paused:true});
+  const IN="power3.out", OUT="power2.in";
+
+  /* ---------- honeycomb background, drawn (free) ---------- */
+  function comb(id){
+    const s=document.getElementById(id); let o=''; const R=74, dx=R*1.732, dy=R*1.5;
+    for(let row=-1; row<16; row++){
+      for(let col=-1; col<10; col++){
+        const cx = col*dx + (row%2? dx/2 : 0), cy = row*dy;
+        const pts=[...Array(6)].map((_,i)=>{const a=Math.PI/180*(60*i-30);
+          return (cx+R*Math.cos(a)).toFixed(1)+','+(cy+R*Math.sin(a)).toFixed(1);}).join(' ');
+        o+=`<polygon points="${pts}" fill="none" stroke="#4A3borderA" stroke-width="3" opacity=".30"/>`;
+      }
+    }
+    s.innerHTML=o.replace(/#4A3borderA/g,'#5A4320');
+  }
+  comb('comb3'); comb('comb4');
+
+  /* ---------- captions, dwell computed for the 6-9 band ---------- */
+  const AGE_MIN = 1.8;
+  const CAPTIONS = [
+    [0.30,"A honeybee just found a field of flowers."],
+    [3.70,"Now she has to tell the others — in the dark."],
+    [7.70,"So she dances."],
+    [11.70,"A little figure of eight, over and over, right on the honeycomb."],
+    [17.50,"And here's the clever part."],
+    [20.20,"The way she tilts her dance is the way to the flowers."],
+    [23.80,"Straight up means: fly toward the sun."],
+    [29.00,"And the longer she waggles, the further you have to go."],
+    [34.50,"A man called Karl von Frisch worked this out."],
+    [37.60,"It won him a Nobel Prize."],
+    [39.80,"A bee drew a map. With her body. In the dark."]
+  ];
+  const cap=document.getElementById('cap');
+  CAPTIONS.forEach(([t,text])=>{
+    const el=document.createElement('div');
+    el.textContent=text; el.style.cssText='position:absolute;left:0;right:0;bottom:0;opacity:0';
+    cap.appendChild(el);
+    const dwell=Math.max(AGE_MIN, 0.6+0.25*text.split(' ').length);
+    tl.fromTo(el,{opacity:0,y:12},{opacity:1,y:0,duration:.26,ease:IN},t);
+    tl.to(el,{opacity:0,duration:.20,ease:OUT},t+dwell);
+  });
+
+  /* ---------- 1 ---------- */
+  tl.fromTo("#p1",{scale:1.00,x:0},{scale:1.08,x:-22,duration:3.8,ease:"none"},0);
+  /* ---------- 2 ---------- */
+  tl.fromTo("#p2",{scale:1.00},{scale:1.06,duration:4.1,ease:"none"},3.7);
+  tl.fromTo("#t2b",{opacity:0,y:12},{opacity:1,y:0,duration:.34,ease:IN},5.30);
+  /* ---------- 3 · she begins to move ---------- */
+  tl.fromTo("#bee3",{y:0,rotation:0},{y:-150,rotation:12,duration:1.6,ease:"sine.inOut"},8.20);
+  tl.to("#bee3",{y:150,rotation:-12,duration:1.9,ease:"sine.inOut"},9.80);
+  /* ---------- 4 · the figure of eight draws itself ---------- */
+  (function(){
+    const f=document.getElementById('fig8'), w=document.getElementById('wag');
+    // two lobes meeting on a central waggle run
+    f.setAttribute('d','M540 1010 C 760 980, 760 700, 540 690 C 320 700, 320 980, 540 1010 '
+                     + 'C 760 1020, 760 1300, 540 1310 C 320 1300, 320 1020, 540 1010');
+    w.setAttribute('d','M540 1060 L540 940');
+    [f,w].forEach(p=>{const L=p.getTotalLength();
+      p.style.strokeDasharray=L; p.style.strokeDashoffset=L;});
+    tl.to(f,{strokeDashoffset:0,duration:3.1,ease:"none"},12.00);
+    tl.to(w,{strokeDashoffset:0,duration:.5,ease:IN},13.40);
+  })();
+  tl.fromTo("#t4b",{opacity:0,y:12},{opacity:1,y:0,duration:.32,ease:IN},13.90);
+  /* ---------- 5 · the angle ---------- */
+  tl.fromTo("#p5",{scale:1.00},{scale:1.05,duration:6.4,ease:"none"},17.5);
+  tl.fromTo("#tilt",{rotation:0},{rotation:38,transformOrigin:"0px 0px",duration:1.5,ease:IN},19.60);
+  (function(){
+    const a=document.getElementById('arc');
+    a.setAttribute('d','M0 -150 A150 150 0 0 1 92 -118');
+    const L=a.getTotalLength(); a.style.strokeDasharray=L; a.style.strokeDashoffset=L;
+    tl.to(a,{strokeDashoffset:0,duration:.7,ease:IN},20.30);
+  })();
+  tl.to("#t5",{opacity:0,duration:.22,ease:OUT},20.00);
+  tl.fromTo("#t5b",{opacity:0,y:18},{opacity:1,y:0,duration:.40,ease:IN},20.20);
+  /* ---------- 6 · straight up ---------- */
+  (function(){
+    const g=document.getElementById('rays6'); let o='';
+    for(let i=0;i<12;i++){const a=i/12*Math.PI*2;
+      o+=`<line x1="${(Math.cos(a)*112).toFixed(0)}" y1="${(Math.sin(a)*112).toFixed(0)}" x2="${(Math.cos(a)*152).toFixed(0)}" y2="${(Math.sin(a)*152).toFixed(0)}"/>`;}
+    g.innerHTML=o;
+  })();
+  const up=document.getElementById('up6'); const UL=up.getTotalLength();
+  up.style.strokeDasharray=UL; up.style.strokeDashoffset=UL;
+  tl.to(up,{strokeDashoffset:0,duration:.9,ease:IN},24.40);
+  tl.to("#uphead",{opacity:1,duration:.22,ease:IN},25.20);
+  tl.fromTo("#sun6",{scale:.94},{scale:1.0,duration:.5,ease:"back.out(1.6)"},25.30);
+  /* ---------- 7 · distance ---------- */
+  tl.fromTo("#bar7",{attr:{width:0}},{attr:{width:840},duration:2.1,ease:"none"},29.60);
+  tl.fromTo("#flower7",{x:0},{x:800,duration:2.1,ease:"none"},29.60);
+  tl.to("#t7",{opacity:0,duration:.22,ease:OUT},31.50);
+  tl.fromTo("#t7b",{opacity:0,y:16},{opacity:1,y:0,duration:.38,ease:IN},31.70);
+  /* ---------- 8 · credit ---------- */
+  tl.fromTo("#t8",{opacity:0,y:20},{opacity:1,y:0,duration:.42,ease:IN},34.80);
+  tl.fromTo("#t8r",{width:0},{width:360,duration:.52,ease:IN},35.30);
+  tl.fromTo("#t8b",{opacity:0,y:14},{opacity:1,y:0,duration:.38,ease:IN},37.60);
+  /* ---------- 9 · close ---------- */
+  tl.fromTo("#p9",{scale:1.00},{scale:1.05,duration:4.2,ease:"none"},39.8);
+  tl.fromTo("#t9b",{opacity:0,y:14},{opacity:1,y:0,duration:.34,ease:IN},41.00);
+  tl.fromTo("#t9c",{opacity:0,y:14},{opacity:1,y:0,duration:.34,ease:IN},42.00);
+
+  /* hold to a full 44.00s — the renderer takes the film's length from this timeline */
+  tl.to("#t9c",{opacity:1,duration:.60,ease:"none"},43.40);
+
+  window.__timelines = window.__timelines || {};
+  window.__timelines["root"] = tl;
+})();
+</script>
+</div>
+</body>
+</html>
