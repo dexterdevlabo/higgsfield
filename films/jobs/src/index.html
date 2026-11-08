@@ -87,6 +87,13 @@
   #title .t{font-family:'D';font-size:184px;letter-spacing:-.03em;color:var(--paper);line-height:.9}
   #title .s{font-family:'M';font-size:24px;letter-spacing:.34em;color:var(--hot);margin-top:28px}
 
+  #credits{position:absolute;left:96px;right:96px;top:150px;z-index:40;opacity:0;text-align:center}
+  #credits .cHead{font-family:'M';font-size:22px;letter-spacing:.3em;color:var(--hot);margin-bottom:34px}
+  #credits .cBody{font-family:'B';font-weight:400;font-size:26px;line-height:1.75;color:var(--paper);
+                  white-space:pre-line;letter-spacing:.01em}
+  #credits .cBody2{font-family:'M';font-size:19px;line-height:1.9;color:var(--dim);
+                   white-space:pre-line;margin-top:42px}
+
   /* ============ GRADE + GRAIN (over everything) ============ */
   #vig{position:absolute;inset:0;z-index:20;pointer-events:none;
     background:radial-gradient(ellipse 76% 80% at 50% 48%,transparent 42%,rgba(0,0,0,.58) 100%)}
@@ -127,7 +134,7 @@
     <div class="shot card" id="s_mk209"><video id="v_mk209" src="assets/footage/market-st_209.mp4" data-start="43.0" data-duration="25.0" muted></video></div>
 
     <!-- ch2 the machine -->
-    <div class="shot full" id="s_mh"><video id="v_mh" src="assets/footage/master-hands_160.mp4" data-start="68.0" data-duration="22.0" muted></video></div>
+    <div class="shot full" id="s_mh"><video id="v_mh" src="assets/footage/master-hands_160.mp4" data-start="68.0" data-duration="23.2" muted></video></div>
     <div class="shot tile h1" id="s_ct1"><video id="v_ct1" src="assets/footage/cotton-mills_61.mp4" data-start="91.0" data-duration="13.0" muted></video></div>
     <div class="shot tile h2" id="s_ct2"><video id="v_ct2" src="assets/footage/cotton-mills_61.mp4" data-start="91.0" data-duration="13.0" muted></video></div>
     <div class="shot tile h3" id="s_ct3"><video id="v_ct3" src="assets/footage/cotton-mills_61.mp4" data-start="91.0" data-duration="13.0" muted></video></div>
@@ -160,7 +167,7 @@
     <div class="shot full" id="s_mh2"><video id="v_mh2" src="assets/footage/master-hands_160.mp4" data-start="218.0" data-duration="5.0" muted></video></div>
     <div class="shot one"  id="s_vk"><video id="v_vk" src="assets/footage/verkade_263.mp4" data-start="223.0" data-duration="5.0" muted></video></div>
     <div class="shot card" id="s_atc2"><video id="v_atc2" src="assets/footage/atc_1088.mp4" data-start="227.5" data-duration="4.5" muted></video></div>
-    <div class="shot full" id="s_oud"><video id="v_oud" src="assets/footage/oudams_167.mp4" data-start="231.0" data-duration="8.0" muted></video></div>
+    <div class="shot full" id="s_oud"><video id="v_oud" src="assets/footage/oudams_167.mp4" data-start="231.0" data-duration="4.0" muted></video></div>
   </div>
 
   <!-- grid labels -->
@@ -171,6 +178,17 @@
   <div class="lbl" id="L3" style="left:551px;top:828px">NEWSBOY</div>
   <div class="lbl" id="L4" style="left:1004px;top:828px">SWEEPER</div>
 
+  <div id="credits">
+    <div class="cHead">SOURCES</div>
+    <div class="cBody">A TRIP DOWN MARKET STREET BEFORE THE FIRE (1906) · [TWIN PEAKS TUNNEL CONSTRUCTION] (1917)
+[CALIFORNIA COTTON MILLS] (1924) · MASTER HANDS (1936) · [SAN FRANCISCO GENERAL STRIKE] (1934)
+[CAROLL'S BEAUTY SALON, HAMTRAMCK] (1941) · HOW TO BE WELL GROOMED (1949)
+LEARNING TO SET TYPE (1959) · THE 16mm MOTION PICTURE PROJECTOR (1961)
+A TRAVELER MEETS AIR TRAFFIC CONTROL (1963) · SPACE NAVIGATION (1967)</div>
+    <div class="cBody2">Prelinger Archives, Internet Archive — public domain
+OUD-AMSTERDAM (1923) · VERKADE'S FABRIEKEN TE ZAANDAM (1930) — Eye Filmmuseum, public domain
+Shots selected via movingimagearchive.com</div>
+  </div>
   <div id="title"><div class="t">THE WORK</div><div class="s">1906 &mdash; NOW</div></div>
 
   <div id="vig"></div>
@@ -251,7 +269,7 @@
 
   /* ---- CHAPTER 2 · THE MACHINE : the one full-bleed set piece ---- */
   chapter(68.0,'CHAPTER 02','THE MACHINE');
-  shot('mh', 68.0, 21.6, 2, [1.0,0,0],[1.07,0,-10]);   /* z 2: UNDER the base furniture */
+  shot('mh', 68.0, 23.0, 2, [1.0,0,0],[1.07,0,-10]);   /* z 2: UNDER the base furniture */
   slug(78.0, 10.0, "MASTER HANDS · Chevrolet body plant\nPrelinger Archives · public domain", "1936");
 
   /* three tiles of one repeated motion */
@@ -265,7 +283,7 @@
   slug(91.4, 12.0, "[CALIFORNIA COTTON MILLS]\nPrelinger Archives · public domain", "1924");
 
   /* beat of black before the strike */
-  tl.to('#fade',{opacity:1,duration:.26,ease:"power2.in"},104.2);
+  tl.to('#fade',{opacity:1,duration:.26,ease:"power2.in"},103.9);
   tl.to('#fade',{opacity:0,duration:.40,ease:"power1.out"},105.6);
 
   shot('st0',    106.0, 4.3, 4, [1.9,0,0],[1.98,-8,0]);
@@ -288,7 +306,7 @@
   shot('sal25',161.5,  6.6, 4, [1.92,0,0],[2.04,-8,-6]);
   slug(146.4, 21.8, "[CAROLL'S BEAUTY SALON, HAMTRAMCK]\nPrelinger Archives · public domain", "1941");
   tl.to('#fade',{opacity:1,duration:.26,ease:"power2.in"},168.6);
-  tl.to('#fade',{opacity:0,duration:.40,ease:"power1.out"},170.2);
+  tl.to('#fade',{opacity:0,duration:.40,ease:"power1.out"},171.7);
 
   /* ---- CHAPTER 4 · THE INSTRUMENT ---- */
   chapter(172.0,'CHAPTER 04','THE INSTRUMENT');
@@ -320,14 +338,16 @@
   shot('mh2',  218.0, 4.6, 2, [1.04,0,0],[1.10,0,-8]);
   shot('vk',   223.0, 4.6, 4, [1.0,0,0],[1.08,-8,6]);
   shot('atc2', 227.5, 4.1, 4, [1.9,0,0],[2.0,10,-6]);
-  shot('oud',  231.0, 7.6, 2, [1.0,0,0],[1.12,0,-14]);
-  slug(231.4, 7.2, "OUD-AMSTERDAM\nEye Filmmuseum · public domain (1923)", "1923");
+  shot('oud',  231.0, 3.8, 2, [1.0,0,0],[1.12,0,-14]);
+  slug(231.4, 3.4, "OUD-AMSTERDAM\nEye Filmmuseum · public domain (1923)", "1923");
 
   /* grade to black, then the credit card the register promises */
-  tl.to('#fade',{opacity:1,duration:1.4,ease:"power1.inOut"},237.6);
+  tl.to('#fade',{opacity:1,duration:1.2,ease:"power1.inOut"},233.8);
+  
+  tl.fromTo('#credits',{opacity:0,y:16},{opacity:1,y:0,duration:.9,ease:IN},235.2);
 
   /* terminal hold — the film's length comes from THIS timeline */
-  tl.to('#fade',{opacity:1,duration:0.001,ease:"none"},240.0);
+  tl.to('#credits',{opacity:1,duration:4.0,ease:"none"},236.0);
 
   window.__timelines = window.__timelines || {};
   window.__timelines["root"] = tl;
