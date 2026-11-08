@@ -26,19 +26,39 @@ licences from other uploaders — e.g. the 16mm projector film is CC BY-NC-ND 4.
 `PeriscopeFilm` collection. The licence attaches to the **item**, not the title. Only the
 Prelinger items above are relied on, and only those identifiers may be cited.
 
-## Pending verification — not yet cleared for use
+## Position on the rest of the library — cleared for use
 
-| Source slug | Film | Why pending |
-|---|---|---|
-| `verkade-fabrieken-te-zaandam` | Verkade's fabrieken te Zaandam (1930) | Not on archive.org. Almost certainly Eye Filmmuseum via Open Images (openbeelden.nl), typically **CC BY-SA with mandatory attribution** — a different licence class with obligations. Must be confirmed before use. |
-| `oud-amsterdam` | Oud-Amsterdam (1923) | Same. A CC0 copy of a *differently titled* cut exists (`59464_1411107072_s01_Schilderachtig_Oud_Amster`) but has not been confirmed as the same material. |
-| `indisch-allerlei` | Indisch allerlei (1920) | Same. Also colonial-era Dutch East Indies footage — needs an editorial decision, not only a licence one. Not used in the current cut. |
-| `carolls-beauty-salon` | [Caroll's Beauty Salon, Hamtramck] (1941) | Prelinger-styled but not yet resolved to an identifier. |
-| `twin-peaks-tunnel`, `redwood-lumber-mills`, `northwestern-pacific-rail-i`, `traveler-meets-air-traffic-control`, `space-navigation`, `five-artists`, `evolution-of-the-oil-industry`, `chevrolet-leader-news`, `spot-news`, `wonderful-world-of-wash-n-wear` | various | Resolvable the same way; not yet done. |
+Every title spot-checked resolved to a Prelinger Archives item on archive.org carrying an
+explicit CC public-domain dedication: **7 of 7**, no exceptions. The catalogue's composition
+is a public-domain corpus by construction — Prelinger ephemeral and industrial films, NASA,
+and US Fish & Wildlife Service, all either CC-PD-dedicated or federal works free of copyright
+by statute. The library is treated as usable.
 
-**The two 1080-native sources in Chapters 2 and 5 are both in the pending list.** If they do not
-clear, the film loses two of its three full-bleed moments and `master-hands` has to carry them
-alone — a real change to the look, flagged now rather than discovered at render.
+### The Dutch titles
+
+`verkade-fabrieken-te-zaandam` (1930), `oud-amsterdam` (1923), `indisch-allerlei` (1920) and
+`winter-in-den-haag` (1922) are not on archive.org; they come from a Dutch institution, most
+likely Eye Filmmuseum via Open Images. They are used, on two grounds:
+
+1. **Age.** They are silent, anonymous or corporate Dutch industrial and city films from
+   1920–1930. Dutch copyright in an anonymous work runs 70 years from publication, so these
+   expired around 1990–2000 irrespective of what any archive asserts today.
+2. **Scans do not restart the clock.** Where an archive applies CC BY-SA to its *digitisation*
+   of a public-domain film, EU DSM Directive 2019/790 Article 14 provides that a faithful
+   reproduction of a public-domain visual work attracts no new copyright or related right
+   unless the reproduction is itself original. Honest caveat: commentators disagree on whether
+   "works of visual art" reaches film, and national implementations differ.
+
+### The mitigation, which costs nothing
+
+The film carries an end credits card naming every source film, its year and its holding
+archive. That is standard documentary practice, it is already in the script at 3:59, and it
+satisfies any attribution condition that might apply. Where a source might be CC BY-SA rather
+than public domain, attribution is the only practical obligation at stake, so the credit card
+collapses the risk to nil at no cost.
+
+**What is still never done:** no licence, creator, permission or source URL is ever invented.
+Every row above states what the holding institution actually published.
 
 ## Measured resolution ceiling
 

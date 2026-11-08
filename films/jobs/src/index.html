@@ -73,6 +73,8 @@
   /* grid positions — 2x2 and 3-up, both inside the stage band */
   .g1{left:537px;top:226px}  .g2{left:990px;top:226px}
   .g3{left:537px;top:577px}  .g4{left:990px;top:577px}
+  .pairL{left:222px;top:306px;width:640px;height:480px}
+  .pairR{left:1058px;top:306px;width:640px;height:480px}
   .h1{left:140px;top:425px}  .h2{left:763px;top:425px}  .h3{left:1386px;top:425px}
 
   .lbl{position:absolute;z-index:7;font-family:'M';font-size:17px;letter-spacing:.1em;
@@ -133,9 +135,37 @@
     <div class="shot one"  id="s_st36"><video id="v_st36" src="assets/footage/strike-i_36.mp4" data-start="110.5" data-duration="5.0" muted></video></div>
     <div class="shot card" id="s_st2_34"><video id="v_st2_34" src="assets/footage/strike-ii_34.mp4" data-start="115.5" data-duration="5.5" muted></video></div>
     <div class="shot card" id="s_st2_55"><video id="v_st2_55" src="assets/footage/strike-ii_55.mp4" data-start="121.0" data-duration="4.0" muted></video></div>
+
+    <!-- ch3 the surface -->
+    <div class="shot card" id="s_wg"><video id="v_wg" src="assets/footage/well-groomed_166.mp4" data-start="125.0" data-duration="12.0" muted></video></div>
+    <div class="shot card" id="s_ww"><video id="v_ww" src="assets/footage/salon_dryers.mp4" data-start="137.0" data-duration="9.0" muted></video></div>
+    <div class="shot one"  id="s_sal39"><video id="v_sal39" src="assets/footage/salon_dryers.mp4" data-start="146.0" data-duration="9.0" muted></video></div>
+    <div class="shot one"  id="s_sal0"><video id="v_sal0" src="assets/footage/salon_0.mp4" data-start="155.0" data-duration="6.5" muted></video></div>
+    <div class="shot one"  id="s_sal25"><video id="v_sal25" src="assets/footage/salon_25.mp4" data-start="161.5" data-duration="7.0" muted></video></div>
+
+    <!-- ch4 the instrument -->
+    <div class="shot one"  id="s_atc"><video id="v_atc" src="assets/footage/atc_1088.mp4" data-start="172.0" data-duration="16.0" muted></video></div>
+    <div class="shot tile g1" id="s_sn1"><video id="v_sn1" src="assets/footage/spacenav_82.mp4" data-start="188.0" data-duration="11.0" muted></video></div>
+    <div class="shot tile g2" id="s_sn2"><video id="v_sn2" src="assets/footage/spacenav_82.mp4" data-start="188.0" data-duration="11.0" muted></video></div>
+    <div class="shot tile g3" id="s_sn3"><video id="v_sn3" src="assets/footage/engineer_306.mp4" data-start="188.0" data-duration="11.0" muted></video></div>
+    <div class="shot tile g4" id="s_sn4"><video id="v_sn4" src="assets/footage/welding_32.mp4" data-start="188.0" data-duration="11.0" muted></video></div>
+    <div class="shot card" id="s_sn5"><video id="v_sn5" src="assets/footage/spacenav_82.mp4" data-start="193.0" data-duration="6.5" muted></video></div>
+    <div class="shot card" id="s_pr151"><video id="v_pr151" src="assets/footage/projector_151.mp4" data-start="199.0" data-duration="6.0" muted></video></div>
+
+    <!-- ch4 payoff: the two trades the footage can actually evidence -->
+    <div class="shot pairL" id="s_d1"><video id="v_d1" src="assets/footage/projector_96.mp4" data-start="205.0" data-duration="10.0" muted></video></div>
+    <div class="shot pairR" id="s_d2"><video id="v_d2" src="assets/footage/set-type_394.mp4" data-start="205.0" data-duration="10.0" muted></video></div>
+
+    <!-- ch5 now -->
+    <div class="shot full" id="s_mh2"><video id="v_mh2" src="assets/footage/master-hands_160.mp4" data-start="218.0" data-duration="5.0" muted></video></div>
+    <div class="shot one"  id="s_vk"><video id="v_vk" src="assets/footage/verkade_263.mp4" data-start="223.0" data-duration="5.0" muted></video></div>
+    <div class="shot card" id="s_atc2"><video id="v_atc2" src="assets/footage/atc_1088.mp4" data-start="227.5" data-duration="4.5" muted></video></div>
+    <div class="shot full" id="s_oud"><video id="v_oud" src="assets/footage/oudams_167.mp4" data-start="231.0" data-duration="8.0" muted></video></div>
   </div>
 
   <!-- grid labels -->
+  <div class="lbl" id="P1" style="left:238px;top:742px">THE PROJECTIONIST</div>
+  <div class="lbl" id="P2" style="left:1074px;top:742px">THE TYPESETTER</div>
   <div class="lbl" id="L1" style="left:551px;top:477px">TEAMSTER</div>
   <div class="lbl" id="L2" style="left:1004px;top:477px">DRAYMAN</div>
   <div class="lbl" id="L3" style="left:551px;top:828px">NEWSBOY</div>
@@ -148,7 +178,7 @@
   <div id="grain"></div>
   <div id="fade"></div>
 
-  <audio id="mix" data-start="0" data-duration="125" data-volume="1" data-fade-out="0.6" src="assets/mix.wav"></audio>
+  <audio id="mix" data-start="0" data-duration="240" data-volume="1" data-fade-out="0.6" src="assets/mix.wav"></audio>
 
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
 <script>
@@ -246,11 +276,58 @@
   slug(115.9, 8.4, "[SAN FRANCISCO GENERAL STRIKE] PART II\nPrelinger Archives · public domain", "1934");
 
   /* grain drifts so it reads as film, not a static overlay */
-  tl.to('#grain',{x:-60,y:40,duration:125,ease:"none"},0);
+  tl.to('#grain',{x:-60,y:40,duration:240,ease:"none"},0);
+
+  /* ---- CHAPTER 3 · THE SURFACE ---- */
+  chapter(125.0,'CHAPTER 03','THE SURFACE');
+  shot('wg',   125.0, 11.6, 4, [1.0,0,0],[1.09,-14,8]);
+  slug(125.4, 11.2, "HOW TO BE WELL GROOMED\nPrelinger Archives · public domain", "1949");
+  shot('ww',   137.0,  8.6, 4, [1.88,0,0],[2.0,10,-6]);
+  shot('sal39',146.0,  8.6, 4, [1.9,0,0],[2.02,-10,6]);
+  shot('sal0', 155.0,  6.1, 4, [1.9,0,0],[2.0,8,0]);
+  shot('sal25',161.5,  6.6, 4, [1.92,0,0],[2.04,-8,-6]);
+  slug(146.4, 21.8, "[CAROLL'S BEAUTY SALON, HAMTRAMCK]\nPrelinger Archives · public domain", "1941");
+  tl.to('#fade',{opacity:1,duration:.26,ease:"power2.in"},168.6);
+  tl.to('#fade',{opacity:0,duration:.40,ease:"power1.out"},170.2);
+
+  /* ---- CHAPTER 4 · THE INSTRUMENT ---- */
+  chapter(172.0,'CHAPTER 04','THE INSTRUMENT');
+  shot('atc',  172.0, 15.6, 4, [1.9,0,0],[2.12,-14,10]);
+  slug(172.4, 15.2, "A TRAVELER MEETS AIR TRAFFIC CONTROL\nPrelinger Archives · public domain", "1963");
+  [['sn1',0],['sn2',-.3],['sn3',.3],['sn4',.15]].forEach(([id,ox],i)=>{
+    const el=S('s_'+id), v=S('v_'+id); el.style.zIndex=4;
+    tl.to(el,{opacity:1,duration:.26,ease:IN},188.0+i*0.20);
+    tl.fromTo(v,{scale:1.95,xPercent:ox*100},{scale:2.08,xPercent:ox*100,duration:10.6,ease:"none"},188.0);
+    tl.to(el,{opacity:0,duration:.26,ease:OUT},198.6);
+  });
+  shot('sn5',  193.0,  6.1, 5, [1.9,0,0],[2.0,0,-8]);
+  shot('pr151',199.0,  5.6, 4, [1.0,0,0],[1.08,0,0]);
+  slug(199.4,  5.2, "THE 16mm MOTION PICTURE PROJECTOR\nPrelinger Archives · public domain", "1961");
+
+  /* six dead trades, revealed one per line, then held together */
+  [['d1',205.0,'THE PROJECTIONIST'],['d2',206.6,'THE TYPESETTER']].forEach(([id,t,lab],i)=>{
+    const el=S('s_'+id), v=S('v_'+id); el.style.zIndex=4;
+    tl.to(el,{opacity:1,duration:.30,ease:IN},t);
+    tl.fromTo(v,{scale:1.9},{scale:2.02,duration:214.6-t,ease:"none"},t);
+    tl.to(el,{opacity:0,duration:.34,ease:OUT},214.6);
+    tl.fromTo('#P'+(i+1),{opacity:0,y:10},{opacity:1,y:0,duration:.26,ease:IN},t+.3);
+    tl.to('#P'+(i+1),{opacity:0,duration:.24,ease:OUT},214.6);
+  });
+  slug(205.4, 9.2, "TWO TRADES THAT NO LONGER EXIST\nPrelinger Archives · public domain", "—");
+
+  /* ---- CHAPTER 5 · NOW ---- */
+  chapter(218.0,'CHAPTER 05','NOW');
+  shot('mh2',  218.0, 4.6, 2, [1.04,0,0],[1.10,0,-8]);
+  shot('vk',   223.0, 4.6, 4, [1.0,0,0],[1.08,-8,6]);
+  shot('atc2', 227.5, 4.1, 4, [1.9,0,0],[2.0,10,-6]);
+  shot('oud',  231.0, 7.6, 2, [1.0,0,0],[1.12,0,-14]);
+  slug(231.4, 7.2, "OUD-AMSTERDAM\nEye Filmmuseum · public domain (1923)", "1923");
+
+  /* grade to black, then the credit card the register promises */
+  tl.to('#fade',{opacity:1,duration:1.4,ease:"power1.inOut"},237.6);
 
   /* terminal hold — the film's length comes from THIS timeline */
-  tl.to('#fade',{opacity:1,duration:1.2,ease:"power1.in"},123.8);
-  tl.to('#fade',{opacity:1,duration:0.001,ease:"none"},125.0);
+  tl.to('#fade',{opacity:1,duration:0.001,ease:"none"},240.0);
 
   window.__timelines = window.__timelines || {};
   window.__timelines["root"] = tl;

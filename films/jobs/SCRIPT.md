@@ -62,8 +62,8 @@ Shot column format: `slug @ in–out` (seconds into the source film, from the si
 |---|---|---|
 | 125.0 | Meanwhile a different kind of job is growing, and nobody's counting it as labour. | `how-to-be-well-groomed @ 166.6–176.4` CARD |
 | 131.0 | 1949. An instructional film teaching teenagers how to be employable. | `how-to-be-well-groomed @ 166.6–171.0` CARD, push in on the hands |
-| 137.0 | Its subject is not a skill. It's a surface. | `wonderful-world-of-wash-n-wear @ 0.0–8.0` CARD |
-| 141.5 | Be clean. Be pressed. Be pleasant. | `wonderful-world-of-wash-n-wear @ 8.0–15.8` GRID 3-up |
+| 137.0 | Its subject is not a skill. It's a surface. | `carolls-beauty-salon @ 39.3–48.0` ONE — the row of dryer hoods |
+| 141.5 | Be clean. Be pressed. Be pleasant. | `carolls-beauty-salon @ 48.0–56.0` ONE, push in |
 | 146.0 | Because the new work is done in front of other people. | `carolls-beauty-salon @ 39.3–74.3` CARD |
 | 151.0 | Hamtramck, Michigan. A beauty salon. | `carolls-beauty-salon @ 74.3–100.0` CARD |
 | 155.0 | This is a factory too. The product is how someone feels when they leave. | `carolls-beauty-salon @ 130.8–152.5` CARD |
@@ -82,10 +82,10 @@ Shot column format: `slug @ in–out` (seconds into the source film, from the si
 | 188.0 | Nothing in this room tells you what's physically happening. | `space-navigation @ 83.0–98.0` GRID 2×2 |
 | 193.0 | The job is to hold the real world in your head, from a screen. | `space-navigation @ 98.0–112.8` CARD |
 | 199.0 | And once work can happen on a screen, the screen starts taking jobs with it. | `16mm-projector-care @ 151.3–162.9` CARD |
-| 205.0 | The projectionist. | `16mm-projector-care @ 162.9–167.8` GRID tile 1 |
-| 207.0 | The typesetter. | `learning-to-set-type @ 394.2–398.0` GRID tile 2 |
-| 209.0 | The switchboard. The darkroom. The drawing office. | `five-artists @ 868.8–871.0` + grid tiles 3–5 |
-| 213.0 | Not one of them was replaced by a robot. | `evolution-of-the-oil-industry @ 1687.0–1689.7` GRID tile 6, all 6 hold |
+| 205.0 | The projectionist. | `16mm-projector-care @ 96.3–106.0` PAIR left — a man threading a 16mm machine |
+| 207.0 | The typesetter. | `learning-to-set-type @ 394.2–404.8` PAIR right — hands in the type case |
+| 210.0 | Two trades. Both skilled. Both gone inside forty years. | both cards hold, labels on |
+| 213.0 | And neither was replaced by a robot. | both hold to the cut |
 
 ## CHAPTER 5 — NOW (3:35–4:00)
 

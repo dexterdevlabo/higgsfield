@@ -17,3 +17,7 @@ venv/
 .idea/
 .vscode/
 
+
+# films/jobs: archival footage is fetched by src/fetch_footage.py, not committed
+films/jobs/src/assets/footage/
+films/jobs/src/assets/mix.wav
