@@ -20,16 +20,31 @@ a skill and nothing was installed from it.
 
 ## Skills installed from open-design-agent-kit
 
-31 of its 192, chosen for what this repo actually does — video, motion, diagrams, design
-tokens. The full kit stays unvendored; the rest is one `cp` away.
+**All 185 installable skills**, on the user's instruction after the trade-off was put to them.
 
-Deliberately NOT installed, because they collide with skills already active in this
-environment: `canvas-design` `frontend-design` `pptx` `pdf` `docx` `slides`
-`artifacts-builder`.
+Held back: 7 whose names collide with skills already active in this environment, where a
+second copy shadows the first — `canvas-design` `frontend-design` `pptx` `pdf` `docx`
+`slides` `artifacts-builder`. They remain in the clone if ever wanted.
 
-## Not installed at all
+## Also installed, on the user's instruction
 
-| Repo | Why |
-|---|---|
-| [JimLiu/baoyu-design](https://github.com/JimLiu/baoyu-design) | **Licensing.** Its own `NOTICE.md` states that much of what it ships is Anthropic's material — Artifact-type SKILL.md files, reference docs, reconstructed editors, Anthropicons fonts — that "Anthropic has published no license for" and "this project grants none". The MIT licence covers only the maintainer's own tooling. Vendoring it would commit unlicensed third-party material into this repo's history. The user's call, not a default. |
-| [OpenCoworkAI/open-codesign](https://github.com/OpenCoworkAI/open-codesign) | **Needs a runtime.** A 90MB pnpm monorepo (website + apps + packages) with a root `postinstall` hook, husky, and changesets. It is an application to run, not a skill to read, and `npm install` with scripts is blocked in this container. Belongs on the user's Mac. |
+### JimLiu/baoyu-design — 7 skills
+
+`claude-design` `claude-design-system` `claude-slides` `claude-dashboard` `claude-motion`
+`motion-director` `baoyu-dataviz` (renamed from `dataviz`, which would otherwise shadow the
+built-in). `LICENSE` and `NOTICE.md` are kept inside `.claude/skills/claude-design/`.
+
+**The licensing caveat stands and is the repo's own.** `NOTICE.md` states that much of this
+material is Anthropic's — the Artifact-type SKILL.md files, reference docs, reconstructed
+editors, Anthropicons fonts — that "Anthropic has published no license for" and that "this
+project grants none". MIT covers only the maintainer's local tooling. It was raised before
+installing and the user chose to proceed; recorded here so the decision is not lost.
+
+`motion-director` + `claude-motion` are the pair worth knowing about: scripted, narrated
+motion films with scene timing driven by the voice track.
+
+### OpenCoworkAI/open-codesign — vendored, not runnable here
+
+At `vendor/open-codesign/` (gitignored, so it does not survive the container). A pnpm
+monorepo with a root `postinstall` hook — an app to run, not a skill to read, and
+`npm install` with scripts is blocked in this container. See its `INSTALL-NOTES.md`.
