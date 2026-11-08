@@ -22,4 +22,6 @@ venv/
 films/jobs/src/assets/footage/
 films/jobs/src/assets/mix.wav
 films/jobs/build/
-films/jobs/out/*.mp4
+# render output and HyperFrames' transient scratch — large, and reproducible
+films/jobs/out/*
+!films/jobs/out/*.srt
